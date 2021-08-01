@@ -30,7 +30,7 @@ SNSに馴染みのある年齢層
 - デートプランや、記念日などの過ごし方、サプライズやプレゼント選びの際の情報収集ができます。
 
 ## 設計書
-<...>
+https://drive.google.com/file/d/1E2zxNbkLugAZCcB4M0Jov-1t1aCReg8b/view?usp=sharing
 
 ## チャレンジ要素一覧
 https://docs.google.com/spreadsheets/d/1fqJI0TjNRaTpuZG-7H6M0-RtpzfGXnq853BA96f2qLA/edit?usp=sharing
