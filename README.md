@@ -35,6 +35,7 @@ SNSに馴染みのある年齢層
 - テーブル定義書:https://drive.google.com/file/d/1-Hyy9eEd2cwuZ4CVn-cEFdEf7kiRLDkx/view?usp=sharing
 - ER図:https://drive.google.com/file/d/1mECKuV5lZdeUM_cytRGrIeQAOIRl-daW/view?usp=sharing
 - 詳細設計:https://drive.google.com/file/d/1zPw0w1BJFZH90xJCJKdO1tJGZ4tRQG-2/view?usp=sharing
+- ワイヤーフレーム:https://drive.google.com/file/d/1zHkQ9ZXN83XfSocj7tpSpe897clRvn9W/view?usp=sharing
 
 ## チャレンジ要素一覧
 https://docs.google.com/spreadsheets/d/1fqJI0TjNRaTpuZG-7H6M0-RtpzfGXnq853BA96f2qLA/edit?usp=sharing
