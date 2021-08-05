@@ -1,0 +1,24 @@
+<h1>Edit</h1>
+<%= form_with model:@user, loca:true do |f| %>
+
+  <div>
+    <%= attachment_image_tag @user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg"%>
+    <label for="inputImage">ProfileImage</label>
+    <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
+  </div>
+  <div>
+    <%= f.label "Name1" %>
+    <%= f.text_field :name, autofocus: true, class: "form-control name" %>
+  </div>
+  <div>
+    <%= f.label "Name2" %>
+    <%= f.text_field :partner_name, autofocus: true, class: "form-control name" %>
+  </div>
+  <div>
+    <%= f.label "cp name" %>
+    <%= f.text_field :couple_namer_name, autofocus: true, class: "form-control name" %>
+  </div>
+
+  <%= f.submit "Update" %>
+
+<% end %>

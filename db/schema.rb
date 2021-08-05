@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_04_081002) do
+ActiveRecord::Schema.define(version: 2021_08_05_061810) do
 
   create_table "comments", force: :cascade do |t|
     t.integer "user_id"
@@ -61,8 +61,6 @@ ActiveRecord::Schema.define(version: 2021_08_04_081002) do
     t.string "anniversary"
     t.string "couple_name"
     t.string "profile_image_id"
-    t.integer "gender"
-    t.integer "partner_gender"
     t.boolean "is_deleted"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

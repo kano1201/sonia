@@ -1,0 +1,10 @@
+<h4><%= @user.couple_name %></h4>
+<%= render 'info', user: @user %>
+<% @posts.each do |post| %>
+<div>
+  <%= link_to post_path(post.id) do %>
+   <%= attachment_image_tag post, :image %>
+  <% end %>
+  <p>Title<%= post.title %></p>
+</div>
+<% end %>
