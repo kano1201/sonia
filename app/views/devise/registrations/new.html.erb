@@ -16,7 +16,7 @@
 
   <div class="field">
     <%= f.label "Anniversary" %><br />
-    <%= f.text_field :anniversary, autofocus: true, autocomplete: "anniversary", placeholder: "2021/12/01", class: "form-control" %>
+    <%= f.date_select :anniversary,use_month_numbers: true, start_year: 2000, end_year: Time.now.year, prompt:"--", class: "form-control" %>
   </div>
 
   <div>
