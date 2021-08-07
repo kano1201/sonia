@@ -1,0 +1,15 @@
+<%= render 'users/info', user: @user %>
+<h1>投稿詳細</h1>
+<div>
+  <%= attachment_image_tag @post, :image %>
+  <%= link_to user_path(@user.id) do %>
+    <p>Couple Name<%= @post.user.couple_name %></p>
+  <% end %>
+  <p>Title<%= @post.title %></p>
+  <p>Body<%= @post.body %></p>
+  <p>Day<%= @post.created_at.strftime('%Y/%m/%d') %></p>
+  <% if @post.user == current_user %>
+    <%= link_to "Destroy", post_path(@post), method: :delete %>
+    <%= link_to "Edit", edit_post_path(@post.id) %>
+  <% end %>
+</div>
