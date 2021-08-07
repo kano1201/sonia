@@ -1,1 +1,17 @@
-<h1>ユーザー一覧</h1>
+<h1>ユーザー一覧(人気順)</h1>
+<% @users.each do |user| %>
+<div>
+  <%= attachment_image_tag(user, :profile_image,width: '10%', height: '10%',fallback: "no_image.jpg")%>
+  <%= link_to user.couple_name,user_path(user.id) %>
+</div>
+<% end %>
+
+<h1>Happy Anniversary</h1>
+<h1>ユーザー一覧(本日の記念日)</h1>
+<% @users.each do |user| %>
+<div>
+  <%= attachment_image_tag(user, :profile_image,width: '10%', height: '10%',fallback: "no_image.jpg")%>
+  <%= link_to user.couple_name,user_path(user.id) %>
+</div>
+<% end %>
+<!--ランキング、記念日ユーザー作る-->
