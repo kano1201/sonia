@@ -28,4 +28,11 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:name, :partner_name, :anniversary, :couple_name, :email, :is_deleted)
+  end
+
 end
