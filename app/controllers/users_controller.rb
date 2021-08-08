@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
-    @posts = @user.posts
+    @photos = @user.photo
   end
 
   def edit
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.update(is_deleted: true)
     reset_session
-    redirect_to about_
+    redirect_to about_path
   end
 
   def index

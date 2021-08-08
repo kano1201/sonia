@@ -2,4 +2,5 @@
 <%= attachment_image_tag(user, :profile_image,width: '10%', height: '10%',fallback: "no_image.jpg")%>
 <p><%= user.name %><%= user.partner_name %></p>
 <p><%= user.anniversary %></p>
-<p><%= link_to "Edit", edit_user_path(user),class: "btn btn-outline-secondary btn-block fas fa-user-cog edit_user_#{user.id}" </p>
+<p><%= user.couple_name %></p>
+<p><%= link_to "Edit", edit_user_path(user),class: "btn btn-outline-secondary btn-block fas fa-user-cog edit_user_#{user.id}" %> </p>

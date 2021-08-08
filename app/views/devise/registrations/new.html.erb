@@ -5,6 +5,11 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
+    <%= f.label "Cp name" %><br />
+    <%= f.text_field :couple_name, autofocus: true, autocomplete: "couple_name", placeholder: "tonecp_1201", class: "form-control" %>
+  </div>
+
+  <div class="field">
     <%= f.label "Name1" %><br />
     <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "とおる", class: "form-control" %>
   </div>

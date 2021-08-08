@@ -1,9 +1,9 @@
 <h4><%= @user.couple_name %></h4>
 <%= render 'info', user: @user %>
-<% @posts.each do |post| %>
+<% @photo.each do |photo| %>
 <div>
-  <%= link_to post_path(post.id) do %>
-   <%= attachment_image_tag post, :image %>
+  <%= link_to photo_path(photo.id) do %>
+   <%= attachment_image_tag photo, :image_id %>
   <% end %>
   <p>Title<%= post.title %></p>
 </div>
