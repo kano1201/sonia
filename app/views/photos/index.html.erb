@@ -2,9 +2,9 @@
 <%= @photos.each do |photo| %>
 <div>
   <%= attachment_image_tag photo, :image_id %>
-  <!--%= link_to user_path(@user.id) do %-->
+  <%= link_to user_path(photo.user) do %>
     <p><%= photo.user.couple_name %></p>
-  <!--% end %-->
+  <% end %>
   <%= link_to photo_path(photo.id) do %>
     <p><%= photo.title %></p>
   <% end %>
