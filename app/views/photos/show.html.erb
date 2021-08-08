@@ -8,6 +8,7 @@
   <p>Title<%= @photo.title %></p>
   <p>Body<%= @photo.body %></p>
   <p>Day<%= @photo.created_at.strftime('%Y/%m/%d') %></p>
+  <%= render "likes/like", photo: @photo %>
   <% if @photo.user == current_user %>
     <%= link_to "Destroy", photo_path(@photo), method: :delete %>
     <%= link_to "Edit", edit_photo_path(@photo.id) %>

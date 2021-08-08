@@ -1,4 +1,6 @@
 class PhotosController < ApplicationController
+  before_action :authenticate_user!
+
   def show
     @photo = Photo.find(params[:id])
     @user = @photo.user
