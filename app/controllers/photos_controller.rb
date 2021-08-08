@@ -9,7 +9,7 @@ class PhotosController < ApplicationController
   end
 
   def create
-    @photo = Photo.new(post_params)
+    @photo = Photo.new(photo_params)
     @photo.user_id = current_user.id
     @photo.save
     redirect_to photos_path
@@ -27,7 +27,7 @@ class PhotosController < ApplicationController
 
   def index
     @photos = Photo.all
-    @user = @photo.user
+    @user = current_user
   end
 
   def destroy
@@ -39,7 +39,7 @@ class PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:photo).permit(:user_id, :title, :body, :image_id, :place)
+    params.require(:photo).permit(:title, :body, :image, :place)
   end
 
 end
