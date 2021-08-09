@@ -8,5 +8,6 @@
       <p><%= photo.user.couple_name %></p>
     <% end %>
     <p><%= photo.title %></p>
+    <p><%= link_to "#{photo.comments.count}Comments", photo_path(photo.id) %></p>
   </div>
 <% end %>

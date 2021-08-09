@@ -4,6 +4,7 @@ class PhotosController < ApplicationController
   def show
     @photo = Photo.find(params[:id])
     @user = @photo.user
+    @comment = Comment.new
   end
 
   def new

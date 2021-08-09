@@ -1,0 +1,22 @@
+<div class="comment">
+  <p><%= @photo.comments.count %></p>
+  <% @photo.comments.each do |comment| %>
+    <p>
+      <%= link_to user_path(comment.user),class: "user_#{comment.user.id}" do %>
+        <%= attachment_image_tag comment.user, :profile_image, :fill, 50, 50, fallback: "no_image.jpg", size: "50x50" %>
+        <%= comment.user.couple_name %>
+        <%= comment.created_at.strftime('%Y/%m/%d') %>
+      <% end %>
+    </p>
+    <p><%= comment.comment %></p>
+    <% if current_user == comment.user %>
+      <p><%= link_to 'Destroy', photo_comment_path(comment.photo_id, comment.id), method: :delete %></p>
+    <% end %>
+</div>
+<% end %>
+<div class="new-comment">
+  <%= form_with(model:[@photo,@comment], local: true)do |f| %>
+    <%= f.text_area :comment, size:"90x5", placeholder: "Please enter your comments" %>
+    <%= f.submit "送信" %>
+  <% end %>
+</div>
