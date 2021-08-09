@@ -9,5 +9,6 @@
     <% end %>
     <p><%= photo.title %></p>
     <p><%= link_to "#{photo.comments.count}Comments", photo_path(photo.id) %></p>
+    <p><%= photo.likes.count %>Likes</p>
   </div>
 <% end %>
