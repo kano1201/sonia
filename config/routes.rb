@@ -10,10 +10,12 @@ Rails.application.routes.draw do
     resource :relationships, only: [:create, :destroy]
     get 'followings' => 'relationships#followings', as: 'followings'
     get 'followers' => 'relationships#followers', as: 'followers'
+    get 'favorites' => 'favorites#favorites', as: 'favorites'
   end
 
   resources :photos, only: [:show, :edit, :update, :index, :destroy, :new, :create] do
     resource :likes, only: [:create, :destroy]
     resources :comments, only: [:create, :destroy]
+    resource :favorites, only: [:create, :destroy]
   end
 end
