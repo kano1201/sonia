@@ -18,11 +18,11 @@ class UsersController < ApplicationController
   end
 
   def unsubscribe
-    @user = User.find(params[:id])
+    @user = User.find(current_user.id)
   end
 
   def withdraw
-    @user = User.find(params[:id])
+    @user = User.find(current_user.id)
     @user.update(is_deleted: true)
     reset_session
     redirect_to about_path
