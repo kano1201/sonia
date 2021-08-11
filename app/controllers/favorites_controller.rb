@@ -3,16 +3,26 @@ class FavoritesController < ApplicationController
   before_action :authenticate_user!
 
   def create
-    @photo = Photo.find(params[:id])
+    @photo = Photo.find(params[:photo_id])
     if @photo.user_id != current_user.id
-      @favorite = Favorite.create(user_id: current_user.id, photo_id: params[:photo_id])
+      @favorite = @photo.favorites.new(user_id: current_user.id)
+      if @favorite.save
+        redirect_to request.referer
+      else
+        redirect_to request.referer
+      end
     end
   end
 
   def destroy
-    @photo = Photo.find(params[:id])
-    @favorite = Favorite.find_by(user_id: current_user.id, photo_id: params[:photo_id])
-    @favorite.destroy
+    @photo = Photo.find(params[:photo_id])
+    favorite = @photo.favorites.find_by(user_id: current_user.id)
+    if favorite.present?
+      favorite.destroy
+      redirect_to request.referer
+    else
+      redirect_to request.referer
+    end
   end
 
   def favorites

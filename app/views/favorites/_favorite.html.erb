@@ -6,7 +6,7 @@
 
 <% if !Favorite.exists?(user_id: current_user.id, photo_id: photo.id) %>
   <%= link_to photo_favorites_path(photo), method: :post, remote: true do %>
-    <i class="fas fa-bookmark"></i>
+    <i class="far fa-bookmark"></i>
   <% end %>
 <% else %>
   <%= link_to photo_favorites_path(photo), method: :delete, remote: true do %>
