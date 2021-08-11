@@ -26,4 +26,8 @@ class User < ApplicationRecord
   def following?(user)
     followings.include?(user)
   end
+
+  def self.search_for(content, method)
+      User.where('couple_name LIKE ?', '%'+content+'%')
+  end
 end

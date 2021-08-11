@@ -1,14 +1,2 @@
 <h1>投稿一覧</h1>
-<%= @photos.each do |photo| %>
-  <div>
-    <%= link_to photo_path(photo.id) do %>
-      <%= attachment_image_tag photo, :image %>
-    <% end %>
-    <%= link_to user_path(photo.user) do %>
-      <p><%= photo.user.couple_name %></p>
-    <% end %>
-    <p><%= photo.title %></p>
-    <p><%= link_to "#{photo.comments.count}Comments", photo_path(photo.id) %></p>
-    <i class="fas fa-heart heart_red"><%= photo.likes.count %></i>
-  </div>
-<% end %>
+<%= render 'index', photos: @photos %>
