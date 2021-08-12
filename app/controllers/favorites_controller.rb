@@ -6,23 +6,14 @@ class FavoritesController < ApplicationController
     @photo = Photo.find(params[:photo_id])
     if @photo.user_id != current_user.id
       @favorite = @photo.favorites.new(user_id: current_user.id)
-      if @favorite.save
-        redirect_to request.referer
-      else
-        redirect_to request.referer
-      end
+      @favorite.save
     end
   end
 
   def destroy
     @photo = Photo.find(params[:photo_id])
     favorite = @photo.favorites.find_by(user_id: current_user.id)
-    if favorite.present?
-      favorite.destroy
-      redirect_to request.referer
-    else
-      redirect_to request.referer
-    end
+    favorite.destroy
   end
 
   def favorites
