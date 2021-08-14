@@ -1,20 +1,23 @@
-<%= render 'users/info', user: @photo.user %>
-<h1>投稿詳細</h1>
-<div>
-  <%= attachment_image_tag @photo, :image %>
-  <%= link_to user_path(@photo.user) do %>
-    <p>Couple Name<%= @photo.user.couple_name %></p>
-  <% end %>
-  <p>Title<%= @photo.title %></p>
-  <p>Body<%= @photo.body %></p>
-  <p>Day<%= @photo.created_at.strftime('%Y/%m/%d') %></p>
-  <div id="like_<%= @photo.id %>"><%= render "likes/like", photo: @photo %></div>
-  <div id="favorite_<%= @photo.id %>"><%= render "favorites/favorite", photo: @photo %></div>
-  <p><%= @photo.comments.count %>コメント</p>
-  <% if @photo.user == current_user %>
-    <%= link_to "Destroy", photo_path(@photo), method: :delete %>
-    <%= link_to "Edit", edit_photo_path(@photo.id) %>
-  <% end %>
-  <div class="comments"><%= render 'comments/index', photo: @photo %></div>
-  <div><%= render 'comments/comment',photo: @photo, comment: @comment %></div>
+<div class="container">
+  <%= render 'users/info', user: @photo.user %>
+  <h1>投稿詳細</h1>
+  <div>
+    <%= attachment_image_tag @photo, :image %>
+    <%= link_to user_path(@photo.user) do %>
+      <p>Couple Name<%= @photo.user.couple_name %></p>
+    <% end %>
+    <p>Title<%= @photo.title %></p>
+    <p>Body<%= @photo.body %></p>
+    <p>Day<%= @photo.created_at.strftime('%Y/%m/%d') %></p>
+    <div id="like_<%= @photo.id %>"><%= render "likes/like", photo: @photo %></div>
+    <div id="favorite_<%= @photo.id %>"><%= render "favorites/favorite", photo: @photo %></div>
+    <p><%= @photo.comments.count %>コメント</p>
+    <% if @photo.user == current_user %>
+      <%= link_to "Destroy", photo_path(@photo), method: :delete %>
+      <%= link_to "Edit", edit_photo_path(@photo.id) %>
+    <% end %>
+    <div class="comments"><%= render 'comments/index', photo: @photo %></div>
+    <div id="comments_error"><%= render 'layouts/errors', obj: @comment %></div>
+    <div><%= render 'comments/comment',photo: @photo, comment: @comment %></div>
+  </div>
 </div>

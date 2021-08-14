@@ -6,7 +6,9 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.photo_id = @photo.id
     @comment.user_id = current_user.id
-    @comment.save
+    unless @comment.save
+      render 'error'
+    end
   end
 
   def destroy
