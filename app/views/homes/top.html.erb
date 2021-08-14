@@ -7,6 +7,7 @@
     <% end %>
     <%= photo.title %>
   <% end %>
+  <%= paginate @photos %>
 </div>
 <div>
   <h4>User一覧</h4>
@@ -16,4 +17,5 @@
     <% end %>
     <%= user.couple_name %>
   <% end %>
+  <%= paginate @users %>
 </div>
