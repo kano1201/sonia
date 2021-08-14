@@ -1,25 +1,32 @@
-<h1>Edit</h1>
-<%= form_with model:@user, loca:true do |f| %>
+<div class="container">
+  <h1>Edit</h1>
+  <%= render 'layouts/errors', obj: @user %> <!--エラーメッセージでない-->
+  <%= form_with model:@user, loca:true do |f| %>
 
-  <div>
-    <%= attachment_image_tag @user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg"%>
-    <label for="inputImage">ProfileImage</label>
-    <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
-  </div>
-  <div>
-    <%= f.label "Name1" %>
-    <%= f.text_field :name, autofocus: true, class: "form-control name" %>
-  </div>
-  <div>
-    <%= f.label "Name2" %>
-    <%= f.text_field :partner_name, autofocus: true, class: "form-control name" %>
-  </div>
-  <div>
-    <%= f.label "cp name" %>
-    <%= f.text_field :couple_name, autofocus: true, class: "form-control name" %>
-  </div>
+    <div>
+      <%= attachment_image_tag @user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg"%>
+      <label for="inputImage">ProfileImage</label>
+      <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
+    </div>
+    <div>
+      <%= f.label "Name1" %>
+      <%= f.text_field :name, autofocus: true, class: "form-control name" %>
+    </div>
+    <div>
+      <%= f.label "Name2" %>
+      <%= f.text_field :partner_name, autofocus: true, class: "form-control name" %>
+    </div>
+    <div>
+      <%= f.label "cp name" %>
+      <%= f.text_field :couple_name, autofocus: true, class: "form-control name" %>
+    </div>
+    <div>
+      <%= f.label "Email" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "sample@example.com", class: "form-control name" %>
+    </div>
 
-  <%= f.submit "Update" %>
-  <%= link_to "退会",confirm_unsubscribe_path,class: "btn btn-danger" %>
+    <%= f.submit "Update" %>
+    <%= link_to "退会",confirm_unsubscribe_path,class: "btn btn-danger" %>
 
-<% end %>
+  <% end %>
+</div>

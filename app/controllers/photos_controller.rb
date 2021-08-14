@@ -35,7 +35,7 @@ class PhotosController < ApplicationController
   end
 
   def index
-    @photos = Photo.all
+    @photos = Photo.page(params[:page]).reverse_order
     @user = current_user
   end
 

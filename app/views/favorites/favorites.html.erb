@@ -10,6 +10,7 @@
     <% end %>
     <p><%= photo.title %></p>
   <% end %>
+  <%= paginate @photos %>
 <% else %>
   <p>お気に入りはありません</p>
 <% end %>

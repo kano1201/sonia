@@ -19,6 +19,7 @@ class FavoritesController < ApplicationController
   def favorites
     favorites = Favorite.where(user_id: current_user.id).pluck(:photo_id) #ログイン中のユーザーのお気に入りのphoto_idカラムを取得
     @favorite = Photo.find(favorites)  #photosテーブルから、お気に入り登録済みのレコードを取得
+    @photos = Photo.page(params[:page]).reverse_order
   end
 
 end

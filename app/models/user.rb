@@ -15,6 +15,11 @@ class User < ApplicationRecord
   has_many :followers, through: :reverse_of_relationshios, source: :follower #自分をフォローしてるユーザー
   has_many :followings, through: :relationships, source: :followed #自分がフォローしてるユーザー
 
+  validates :name, presence: true
+  validates :partner_name, presence: true
+  validates :couple_name, presence: true
+  validates :email, presence: true
+
   def follow(user_id)
     relationships.create(followed_id: user_id)
   end
