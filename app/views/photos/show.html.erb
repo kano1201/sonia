@@ -8,11 +8,13 @@
   <p>Title<%= @photo.title %></p>
   <p>Body<%= @photo.body %></p>
   <p>Day<%= @photo.created_at.strftime('%Y/%m/%d') %></p>
-   <div id="like_<%= @photo.id %>"><%= render "likes/like", photo: @photo %></div>
+  <div id="like_<%= @photo.id %>"><%= render "likes/like", photo: @photo %></div>
   <div id="favorite_<%= @photo.id %>"><%= render "favorites/favorite", photo: @photo %></div>
+  <p><%= @photo.comments.count %>コメント</p>
   <% if @photo.user == current_user %>
     <%= link_to "Destroy", photo_path(@photo), method: :delete %>
     <%= link_to "Edit", edit_photo_path(@photo.id) %>
   <% end %>
-  <%= render 'photos/comment', photo: @photo, comment: @comment %>
+  <div class="comments"><%= render 'comments/index', photo: @photo %></div>
+  <div><%= render 'comments/comment',photo: @photo, comment: @comment %></div>
 </div>
