@@ -27,8 +27,11 @@ class PhotosController < ApplicationController
 
   def update
     @photo = Photo.find(params[:id])
-    @photo.update(photo_params)
-    redirect_to photo_path(@photo.id)
+    if @photo.update(photo_params)
+      redirect_to photo_path(@photo.id)
+    else
+      render :edit
+    end
   end
 
   def index
