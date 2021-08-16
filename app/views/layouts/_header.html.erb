@@ -1,31 +1,42 @@
-<% if user_signed_in? %>
-  <li>
-    <%= link_to "New", new_photo_path %>
-  </li>
-  <li>
-    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-  </li>
-  <li>
-    <%= link_to "Mypage", user_path(current_user.id) %>
-  </li>
-  <li>
-    <%= link_to "Favorites", user_favorites_path(current_user.id) %>
-  </li>
-  <li>
-    <%= link_to "Post", photos_path %>
-  </li>
-  <div>
-    <%= form_with url: search_path, method: :get, local: true do |f| %>
-      <%= f.text_field :content %>
-      <%= f.select :model, options_for_select({"User" => "user", "Post" =>"photo"}) %>
-      <%= f.submit 'Search' %>
-    <% end %>
-  </div>
-<% else %>
-  <li>
-    <%= link_to "Signup",new_user_registration_path %>
-  </li>
-  <li>
-    <%= link_to "Login",new_user_session_path %>
-  </li>
-<% end %>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="/">Logo<%#= image_tag "logo.jpeg", size:"150" %></a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto d-flex align-items-start">
+          <% if user_signed_in? %>
+            <li　class="nav-item">
+              <%= link_to "New", new_photo_path %>
+            </li>
+            <li　class="nav-item">
+              <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+            </li>
+            <li　class="nav-item">
+              <%= link_to "Mypage", user_path(current_user.id) %>
+            </li>
+            <li　class="nav-item">
+              <%= link_to "Favorites", user_favorites_path(current_user.id) %>
+            </li>
+            <li　class="nav-item">
+              <%= link_to "Post", photos_path %>
+            </li>
+            <li class="search_form">
+              <%= form_with url: search_path, method: :get, local: true do |f| %>
+                <%= f.text_field :content %>
+                <%= f.select :model, options_for_select({"User" => "user", "Post" =>"photo"}) %>
+                <%= f.submit 'Search' %>
+              <% end %>
+            </li>
+          <% else %>
+            <li　class="nav-item">
+              <%= link_to "Signup",new_user_registration_path %>
+            </li>
+            <li　class="nav-item">
+              <%= link_to "Login",new_user_session_path %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

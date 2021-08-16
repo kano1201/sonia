@@ -1,23 +1,40 @@
-<div class="container">
-  <%= render 'users/info', user: @photo.user %>
-  <h1>投稿詳細</h1>
-  <div>
-    <%= attachment_image_tag @photo, :image %>
-    <%= link_to user_path(@photo.user) do %>
-      <p>Couple Name<%= @photo.user.couple_name %></p>
-    <% end %>
-    <p>Title<%= @photo.title %></p>
-    <p>Body<%= @photo.body %></p>
-    <p>Day<%= @photo.created_at.strftime('%Y/%m/%d') %></p>
-    <div id="like_<%= @photo.id %>"><%= render "likes/like", photo: @photo %></div>
-    <div id="favorite_<%= @photo.id %>"><%= render "favorites/favorite", photo: @photo %></div>
-    <p><%= @photo.comments.count %>コメント</p>
-    <% if @photo.user == current_user %>
-      <%= link_to "Destroy", photo_path(@photo), method: :delete %>
-      <%= link_to "Edit", edit_photo_path(@photo.id) %>
-    <% end %>
-    <div class="comments"><%= render 'comments/index', photo: @photo %></div>
-    <div id="comments_error"><%= render 'layouts/errors', obj: @comment %></div>
-    <div><%= render 'comments/comment',photo: @photo, comment: @comment %></div>
+<div class="container px-5 px-sm-0">
+  <div class="row">
+    <div class='col-md-3'>
+      <%= render 'users/info', user: @photo.user %>
+    </div>
+    <h1>投稿詳細</h1>
+    <div class='col-md-8 offset-md-1'>
+      <div class="card w-50 mx-auto mt-4">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <%= attachment_image_tag @photo, :image,class:"card-img-top"; %>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <div class="col-12">
+                <%= link_to user_path(@photo.user) do %>
+                  <p class="card-title">Couple Name<%= @photo.user.couple_name %></p>
+                <% end %>
+                <p class="card-title">Title<%= @photo.title %></p>
+                <p class="card-text">Body<%= @photo.body %></p>
+                <p class="card-text">Day<%= @photo.created_at.strftime('%Y/%m/%d') %></p>
+                <span><div id="like_<%= @photo.id %>"><%= render "likes/like", photo: @photo %></div></span>
+                <span><div id="favorite_<%= @photo.id %>"><%= render "favorites/favorite", photo: @photo %></div></span>
+                <p><%= @photo.comments.count %>コメント</p>
+              </div>
+                <% if @photo.user == current_user %>
+                  <%= link_to "Destroy", photo_path(@photo), method: :delete %>
+                  <%= link_to "Edit", edit_photo_path(@photo.id) %>
+                <% end %>
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+      <div class="comments"><%= render 'comments/index', photo: @photo %></div>
+      <div id="comments_error"><%= render 'layouts/errors', obj: @comment %></div>
+      <div><%= render 'comments/comment',photo: @photo, comment: @comment %></div>
+    </div>
   </div>
 </div>

@@ -1,9 +1,16 @@
 <h4>Our info</h4>
 <table class="table">
-<tr><%= attachment_image_tag(user, :profile_image,width: '10%', height: '10%',fallback: "no_image.jpg")%></tr>
-<tr><%= user.name %><%= user.partner_name %></tr>
-<tr><%= user.anniversary %></tr>
-<tr><%= user.couple_name %></tr>
+<tr><%= attachment_image_tag(user, :profile_image,:fill, 100, 100,fallback: "no_image.jpg")%></tr>
+<tr>
+  <th><%= user.name %></th>
+  <th><%= user.partner_name %></th>
+</tr>
+<tr>
+  <th><%= user.anniversary %></th>
+</tr>
+<tr>
+  <th><%= user.couple_name %></th>
+</tr>
 <tr>
   <th>Follows</th>
   <th><%= link_to user.followings.count, user_followings_path(user) %></th>
