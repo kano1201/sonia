@@ -1,10 +1,10 @@
 <header>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="/">Logo<%#= image_tag "logo.jpeg", size:"150" %></a>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto d-flex align-items-start">
-          <% if user_signed_in? %>
+      <% if user_signed_in? %>
+        <a class="navbar-brand" href="/"><%= image_tag "logo.png", size:"150" %></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto d-flex align-items-start">
             <li　class="nav-item">
               <%= link_to "New", new_photo_path %>
             </li>
@@ -27,16 +27,21 @@
                 <%= f.submit 'Search' %>
               <% end %>
             </li>
-          <% else %>
+          </ul>
+        </div>
+      <% else %>
+        <a class="navbar-brand" href="/about"><%= image_tag "logo.png", size:"150" %></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto d-flex align-items-start">
             <li　class="nav-item">
               <%= link_to "Signup",new_user_registration_path %>
             </li>
             <li　class="nav-item">
               <%= link_to "Login",new_user_session_path %>
             </li>
-          <% end %>
-        </ul>
-      </div>
+          </ul>
+        </div>
+      <% end %>
     </div>
   </nav>
 </header>

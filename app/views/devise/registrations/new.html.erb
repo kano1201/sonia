@@ -1,56 +1,76 @@
-<h2>Sign up</h2>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-xs-6 mx-auto"><h4>Sign Up</h4></div>
+  </div>
 
-<%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-
+  <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label "Cp name" %><br />
-    <%= f.text_field :couple_name, autofocus: true, autocomplete: "couple_name", placeholder: "tonecp_1201", class: "form-control" %>
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form-field col-7 col-lg-6">
+        <%= f.label "Cp name" %><br />
+        <%= f.text_field :couple_name, autofocus: true, autocomplete: "couple_name", placeholder: "tonecp_1201", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form-field col-7 col-lg-3">
+        <%= f.label "Name1" %><br />
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "とおる", class: "form-control" %>
+      </div>
+      <div class="form-field col-7 col-lg-3">
+        <%= f.label "Name2" %><br />
+        <%= f.text_field :partner_name, autofocus: true, autocomplete: "partner_name", placeholder: "ねね", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form-field col-7 col-lg-6">
+        <%= f.label "Anniversary" %><br />
+        <%= f.date_select :anniversary,use_month_numbers: true, start_year: 2000, end_year: Time.now.year, prompt:"--", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="row mt-5 d-flex justify-content-center">
+        <%= attachment_image_tag @user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg"%>
+        <label for="inputImage">ProfileImage</label>
+        <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
+    </div>
+
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form-field col-7 col-lg-6">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "sample@email.com", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form-field col-7 col-lg-6">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form-field col-7 col-lg-6">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+      </div>
+    </div>
+
+      <div class="row mt-5 mb-5 offset-md-4 form-field">
+        <%= f.submit "Sign up", class:"col-3 mx-auto col-lg-2 submit-btn" %>
+      </div>
+    </div>
+  <% end %>
+  <div class="row mt-3">
+    <div class="col-xs-6 mx-auto"><h6>-既に登録済みの方-</h6></div>
   </div>
 
-  <div class="field">
-    <%= f.label "Name1" %><br />
-    <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "とおる", class: "form-control" %>
+  <div class="row mt-2 mb-5">
+    <div class="col-12 text-center"><%= render "devise/shared/links" %></div>
   </div>
-
-  <div class="field">
-    <%= f.label "Name2" %><br />
-    <%= f.text_field :partner_name, autofocus: true, autocomplete: "partner_name", placeholder: "ねね", class: "form-control" %>
-  </div>
-
-  <div class="field">
-    <%= f.label "Anniversary" %><br />
-    <%= f.date_select :anniversary,use_month_numbers: true, start_year: 2000, end_year: Time.now.year, prompt:"--", class: "form-control" %>
-  </div>
-
-  <div>
-    <%= attachment_image_tag @user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg"%>
-    <label for="inputImage">ProfileImage</label>
-    <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "sample@email.com", class: "form-control" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
