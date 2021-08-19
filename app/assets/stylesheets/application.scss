@@ -23,6 +23,8 @@
   line-height: normal;
 }
 
+/*aboutスライド*/
+
 #box{
   height: 500px;
   width: 100%;
@@ -56,4 +58,16 @@
   color: #fff; /* 文字色を白に変更 */
   text-align: center;
   font-size: 25px;
+}
+
+/*header*/
+.nav-item{
+  display: block;
+  padding: 0 10px;
+  background:white;
+  float:left;
+}
+
+.nav-link{
+  padding-top: 0;
 }
