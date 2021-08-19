@@ -57,3 +57,17 @@ $(function() {
 	},5000); //5秒後に文字含め白背景をフェードアウト
 });
 
+$(document).on('turbolinks:load',function(){
+  $(".fadeInDown").hide().fadeIn(4000);
+});
+
+$(document).on('turbolinks:load', function () {
+	$('#zip').jpostal({
+		postcode : [
+			'#zip'
+		],
+		address : {
+			'#address' : '%3%4%5'
+		}
+	});
+});
