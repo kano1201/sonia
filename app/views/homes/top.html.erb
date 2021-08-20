@@ -33,7 +33,7 @@
     <div class="row mt-5 fadein fadein-bottom">
       <div class="col-xs-12 col-lg-8 col-xl-9 mx-auto">
         <h5 class="mt-5 mt-lg-0 text-center">New Posts</h5>
-        <div class="user_view">
+        <div class="photo_view">
           <div class="d-flex flex-wrap bd-highlight">
             <% @photos.each do |photo| %>
               <div class="card mr-2" style="width: 12rem;">
@@ -59,10 +59,10 @@
     <div class="row mt-5 fadein fadein-bottom">
       <div class="col-xs-12 col-lg-8 col-xl-9 mx-auto">
         <h5 class="mt-5 mt-lg-0 text-center">Users</h5>
-        <div class="row mt-3">
+        <div class="row mt-3 top_user">
             <% @users.each do |user| %>
-              <div class="col-md-2.5" style="margin-left: 80px;">
-                <div class="row">
+              <div class="col-md-2.5" style="margin-left: 60px;">
+                <div class="row mt-3">
                   <div class="col-md-12 text-left">
                     <%= link_to user_path(user.id) do %>
                       <%= attachment_image_tag(user, :profile_image,:fill, 150, 150, fallback: "no_image.jpg", size: "150x150") %>
