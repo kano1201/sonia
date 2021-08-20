@@ -9,20 +9,21 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto d-flex align-items-start">
             <li class="nav-item">
-              <%= link_to "New", new_photo_path,class: 'nav-link text-danger' %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "Logout", destroy_user_session_path, method: :delete,class: 'nav-link text-danger' %>
+              <%= link_to "Posts", photos_path,class: 'nav-link text-danger' %>
             </li>
             <li class="nav-item">
               <%= link_to "Mypage", user_path(current_user.id),class: 'nav-link text-danger' %>
             </li>
             <li class="nav-item">
+              <%= link_to "New", new_photo_path,class: 'nav-link text-danger' %>
+            </li>
+            <li class="nav-item">
               <%= link_to "Favorites", user_favorites_path(current_user.id),class: 'nav-link text-danger' %>
             </li>
             <li class="nav-item">
-              <%= link_to "Post", photos_path,class: 'nav-link text-danger' %>
+              <%= link_to "Logout", destroy_user_session_path, method: :delete,class: 'nav-link text-danger' %>
             </li>
+            
             <li class="search_form">
               <%= form_with url: search_path, method: :get, local: true do |f| %>
                 <%= f.text_field :content %>

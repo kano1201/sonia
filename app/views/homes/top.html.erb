@@ -39,7 +39,7 @@
               <div class="card mr-2" style="width: 12rem;">
                 <div class="p-1 flex-fill bd-highlight">
                   <%= link_to photo_path(photo.id) do %>
-                    <%= attachment_image_tag photo, :image, class: "card-img-top rounded" %>
+                    <%= attachment_image_tag photo, :image,:fill,170,140, class: "card-img-top rounded" %>
                   <% end %>
                   <div class="card-body">
                     <p class="card-title"><%= photo.title %></p>
@@ -82,6 +82,6 @@
         </div>
       </div>
     </div>
-    
+
   </div>
 </div>
