@@ -1,7 +1,7 @@
 class HomesController < ApplicationController
   def top
-    @photos = Photo.page(params[:page]).reverse_order
-    @users = User.page(params[:page]).reverse_order
+    @photos = Photo.limit(5).order(" created_at DESC ")
+    @users = User.limit(5).order(" created_at DESC ")
   end
 
   def about

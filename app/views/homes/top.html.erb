@@ -1,6 +1,6 @@
 <div id="top-mv" class="my-5 mb-lg-7">
   <div class="container-fluid">
-  <div class="row zi-1 pr">
+    <div class="row zi-1 pr">
       <div class="px-md-auto col-md-12">
         <h3 class="text-center mb-5">
           <strong class="fadeInDown"><span class="top-main">What should we do today?</span></strong><br>
@@ -29,29 +29,59 @@
         </li>
       </ul>
     </div>
-  </div>
-</div>
 
-<div class="container mt-5 mb-5 pt-5">
-  <h1>top</h1>
-  <div>
-    <h4>投稿一覧</h4>
-    <% @photos.each do |photo| %>
-      <%= link_to photo_path(photo.id) do %>
-        <%= attachment_image_tag photo, :image, width: '20%', height: '20%' %>
-      <% end %>
-      <%= photo.title %>
-    <% end %>
-    <%= paginate @photos %>
-  </div>
-  <div>
-    <h4>User一覧</h4>
-    <% @users.each do |user| %>
-      <%= link_to user_path(user.id) do %>
-        <%= attachment_image_tag(user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg") %>
-      <% end %>
-      <%= user.couple_name %>
-    <% end %>
-    <%= paginate @users %>
+    <div class="row mt-5 fadein fadein-bottom">
+      <div class="col-xs-12 col-lg-8 col-xl-9 mx-auto">
+        <h5 class="mt-5 mt-lg-0 text-center">New Posts</h5>
+        <div class="user_view">
+          <div class="d-flex flex-wrap bd-highlight">
+            <% @photos.each do |photo| %>
+              <div class="card mr-2" style="width: 12rem;">
+                <div class="p-1 flex-fill bd-highlight">
+                  <%= link_to photo_path(photo.id) do %>
+                    <%= attachment_image_tag photo, :image, class: "card-img-top rounded" %>
+                  <% end %>
+                  <div class="card-body">
+                    <p class="card-title"><%= photo.title %></p>
+                    <p class="card-text"><%= link_to photo.user.couple_name, user_path(photo.user.id) %></p>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="col text-right mb-4">
+          <%= link_to "All Posts", photos_path %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5 fadein fadein-bottom">
+      <div class="col-xs-12 col-lg-8 col-xl-9 mx-auto">
+        <h5 class="mt-5 mt-lg-0 text-center">Users</h5>
+        <div class="row mt-3">
+            <% @users.each do |user| %>
+              <div class="col-md-2.5" style="margin-left: 80px;">
+                <div class="row">
+                  <div class="col-md-12 text-left">
+                    <%= link_to user_path(user.id) do %>
+                      <%= attachment_image_tag(user, :profile_image,:fill, 150, 150, fallback: "no_image.jpg", size: "150x150") %>
+                    <% end %>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-left" style="margin-top: 20px;">
+                    <%= user.couple_name %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+            <div class="col-md-11 text-right mb-4">
+              <%= link_to "All Users", users_path %>
+            </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </div>
