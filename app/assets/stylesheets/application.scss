@@ -23,42 +23,6 @@
   line-height: normal;
 }
 
-/*aboutスライド*/
-
-#box{
-  height: 500px;
-  width: 100%;
-}
-.image1{
-  background-image: image-url('image1.JPG'); /*cafe*/
-}
-.image2{
-  background-image: image-url('image2.JPG'); /*pop*/
-}
-.image3{
-  background-image: image-url('image3.JPG'); /*terrace*/
-}
-.image4{
-  background-image: image-url('image4.JPG'); /*sandwich*/
-}
-.image5{
-  background-image: image-url('image5.JPG'); /*pool*/
-}
-
-.main-visual-content {
-  width: 100%; /* 横幅40% */
-  height: 500px; /* 親の高さに揃える */
-  background-color: rgba(0, 0, 0, 0.2); /* 背景色を半透明の黒にする */
-  text-align: center; /* 文字を中央揃えにする */
-  padding-top: 250px; /* 上側の内側余白で垂直方向の位置を調整 */
-  margin: 0 auto;
-}
-
-.main-visual-text {
-  color: #fff; /* 文字色を白に変更 */
-  text-align: center;
-  font-size: 25px;
-}
 
 /*header*/
 .nav-item{
