@@ -72,6 +72,7 @@
   padding-top: 0;
 }
 
+/*footer*/
 footer {
   width :100%;
   text-align :center;
@@ -80,4 +81,76 @@ footer {
 .foot {
   border-top: solid 2px #C0C0C0	;
    width :30%;
+}
+
+/*form_line*/
+.form_line {
+	position: relative;
+	margin: 40px 0%;
+}
+.input-text {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	//padding-left: 40px;
+	letter-spacing: 1px;
+	border: 0;
+}
+.input-text:focus {
+	outline: none;
+}
+.input-text:focus::after {
+	outline: none;
+}
+.form_line::after {
+	display: block;
+	width: 100%;
+	height: 4px;
+	margin-top: -1px;
+	content: '';
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #CC3333	;
+}
+/*form_box*/
+.form_box {
+    position: relative;
+    padding:0.25em 1em;
+}
+.form_box:before,.form_box:after{
+    content:'';
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+}
+.form_box:before{
+    border-left: solid 1px #CC3333;
+    border-top: solid 1px #CC3333;
+    top:0;
+    left: 0;
+}
+.form_box:after{
+    border-right: solid 1px #CC3333;
+    border-bottom: solid 1px #CC3333;
+    bottom:0;
+    right: 0;
+}
+
+textarea{
+  resize: none;
+  height: 200px;
+}
+
+/*submit btn*/
+.btn-border {
+  color: #CC3333;
+  border: 1px solid #CC3333;
+  border-radius: 0;
+  background: #fff;
+}
+.btn-border:hover {
+  color: #fff;
+  background: #CC3333;
 }

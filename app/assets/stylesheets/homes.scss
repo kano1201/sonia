@@ -45,21 +45,21 @@ button {
   display: inline-block;
 }
 
-.btn-5 {
+.btn-ab {
   width: 130px;
   height: 40px;
   line-height: 42px;
   padding: 0;
   border: none;
 }
-.btn-5 span {
+.btn-ab span {
   position: relative;
   display: block;
   color: #CC3333;
   width: 100%;
   height: 100%;
 }
-.btn-5:before,
+.btn-ab:before,
 .btn-5:after {
   position: absolute;
   content: "";
@@ -68,22 +68,22 @@ button {
   background: #CC3333;
   transition: all 0.3s ease;
 }
-.btn-5:before {
+.btn-ab:before {
   height: 50%;
   width: 2px;
 }
-.btn-5:after {
+.btn-ab:after {
   width: 20%;
   height: 2px;
 }
-.btn-5:hover:before {
+.btn-ab:hover:before {
   height: 100%;
 }
-.btn-5:hover:after {
+.btn-ab:hover:after {
   width: 100%;
 }
-.btn-5 span:before,
-.btn-5 span:after {
+.btn-ab span:before,
+.btn-ab span:after {
   position: absolute;
   content: "";
   left: 0;
@@ -91,18 +91,18 @@ button {
   background: #CC3333;
   transition: all 0.3s ease;
 }
-.btn-5 span:before {
+.btn-ab span:before {
   width: 2px;
   height: 50%;
 }
-.btn-5 span:after {
+.btn-ab span:after {
   width: 20%;
   height: 2px;
 }
-.btn-5 span:hover:before {
+.btn-ab span:hover:before {
   height: 100%;
 }
-.btn-5 span:hover:after {
+.btn-ab span:hover:after {
   width: 100%;
 }
 
