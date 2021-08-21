@@ -7,27 +7,27 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form-field col-7 col-lg-6">
+      <div class="form_line col-7 col-lg-6">
         <%= f.label "Cp name" %><br />
-        <%= f.text_field :couple_name, autofocus: true, autocomplete: "couple_name", placeholder: "tonecp_1201", class: "form-control" %>
+        <%= f.text_field :couple_name, autofocus: true, class:"input-text form-js-input",placeholder: "tonecp-1201"  %>
       </div>
     </div>
 
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form-field col-7 col-lg-3">
+      <div class="form_line col-7 col-lg-3">
         <%= f.label "Name1" %><br />
-        <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "とおる", class: "form-control" %>
+        <%= f.text_field :name, autofocus: true, class:"input-text form-js-input",placeholder: "とおる" %>
       </div>
-      <div class="form-field col-7 col-lg-3">
+      <div class="form_line col-7 col-lg-3">
         <%= f.label "Name2" %><br />
-        <%= f.text_field :partner_name, autofocus: true, autocomplete: "partner_name", placeholder: "ねね", class: "form-control" %>
+        <%= f.text_field :partner_name, autofocus: true, class:"input-text form-js-input",placeholder: "ねね" %>
       </div>
     </div>
 
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form-field col-7 col-lg-6">
+      <div class="form_line col-7 col-lg-6">
         <%= f.label "Anniversary" %><br />
-        <%= f.date_select :anniversary,use_month_numbers: true, start_year: 2000, end_year: Time.now.year, prompt:"--", class: "form-control" %>
+        <%= f.date_select :anniversary,use_month_numbers: true, start_year: 2000, end_year: Time.now.year, prompt:"--", class: "form-anv" %>
       </div>
     </div>
 
@@ -38,31 +38,31 @@
     </div>
 
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form-field col-7 col-lg-6">
+      <div class="form_line col-7 col-lg-6">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "sample@email.com", class: "form-control" %>
+        <%= f.email_field :email, autofocus: true, class:"input-text form-js-input",placeholder: "sample@email.com" %>
       </div>
     </div>
 
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form-field col-7 col-lg-6">
+      <div class="form_line col-7 col-lg-6">
         <%= f.label :password %>
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+        <%= f.password_field :password, class:"input-text form-js-input" %>
       </div>
     </div>
 
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form-field col-7 col-lg-6">
+      <div class="form_line col-7 col-lg-6">
         <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+        <%= f.password_field :password_confirmation, class:"input-text form-js-input" %>
       </div>
     </div>
 
-      <div class="row mt-5 mb-5 offset-md-4 form-field">
-        <%= f.submit "Sign up", class:"col-3 mx-auto col-lg-2 submit-btn" %>
+      <div class="row mt-5 mb-5 offset-md-8 form_btn">
+        <%= f.submit "Sign up",class:"btn btn-border" %>
       </div>
     </div>
   <% end %>
