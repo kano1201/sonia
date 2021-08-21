@@ -9,6 +9,7 @@ class PhotosController < ApplicationController
 
   def new
     @photo = Photo.new
+    @user = current_user
   end
 
   def create
@@ -48,7 +49,7 @@ class PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:photo).permit(:title, :body, :image, :place)
+    params.require(:photo).permit(:title, :body, :image, :place, :name)
   end
 
 end

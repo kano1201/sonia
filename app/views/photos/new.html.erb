@@ -11,6 +11,18 @@
    <div class="form_line">
     <%= f.text_field :title, autofocus: true, class:"input-text form-js-input",placeholder: "Title" %>
    </div>
+   <%= f.select :name, [['', 1],[@user.name, 2], [@user.partner_name, 3], [@user.name+'+'+@user.partner_name, 4]] %>
+   <div class="cp_ipselect">
+    <select class="cp_sl06" required>
+     <option value="" hidden disabled selected></option>
+     <option value="name"><%= @user.name %></option>
+     <option value="partner_name"><%= @user.partner_name %></option>
+     <option value="both_name"><%= @user.name %>+<%= @user.partner_name %></option>
+    </select>
+    <span class="cp_sl06_highlight"></span>
+    <span class="cp_sl06_selectbar"></span>
+    <label class="cp_sl06_selectlabel">Name</label>
+   </div> <!--ここ適用させる-->
    <div class="form_line">
     <%= f.text_field :place, autofocus: true, class:"input-text form-js-input",placeholder: "Place" %>
    </div>

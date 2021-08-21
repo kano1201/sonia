@@ -16,6 +16,7 @@
                 <%= link_to user_path(@photo.user) do %>
                   <p class="card-title">Couple Name<%= @photo.user.couple_name %></p>
                 <% end %>
+                <p class="card-title"><%= @photo.name %></p>
                 <p class="card-title">Title<%= @photo.title %></p>
                 <p class="card-text">Body<%= @photo.body %></p>
                 <p class="card-text">Day<%= @photo.created_at.strftime('%Y/%m/%d') %></p>
