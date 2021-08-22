@@ -34,3 +34,41 @@
   background: #CC6666	;
   color: #FFF;
 }
+
+/*follow btn*/
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #CC6666;
+  border: solid 2px #CC6666	;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border:hover {
+  background: #CC6666	;
+  color: white;
+}
+
+/*unfollow btn*/
+.btn-flat-border-filled {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #fff;
+  border: solid 2px #CC6666	;
+  border-radius: 3px;
+  transition: .4s;
+  background: #CC6666	;
+}
+
+.btn-flat-border-filled:hover {
+  background: #fff;
+  color: #CC6666;
+}
+
+/*user info*/
+.info-table{
+  border: solid 2px #CC3333	;
+}
