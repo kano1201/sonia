@@ -31,7 +31,10 @@
         <%= link_to "Follow", user_relationships_path(user.id), method: :post, class: "btn-flat-border" %>
       <% end %>
     <% else %>
-      <%= link_to '', edit_user_path(user),class: "btn btn-border fab fa-whmcs edit_user_#{user.id}" %>
+      <div>
+        <%= link_to '', edit_user_path(user),class: "fas fa-cog nav-link text-danger edit_user_#{user.id}" %>
+        <%= link_to '', destroy_user_session_path, method: :delete,class: 'fas fa-sign-out-alt nav-link text-danger' %>
+      </div>
     <% end %>
   </div>
 </div>
