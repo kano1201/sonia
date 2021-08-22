@@ -31,7 +31,7 @@
         <%= link_to "Follow", user_relationships_path(user.id), method: :post, class: "btn-flat-border" %>
       <% end %>
     <% else %>
-      <%= link_to '', edit_user_path(user),class: "btn btn-outline-secondary btn-block fas fa-user-cog edit_user_#{user.id}" %>
+      <%= link_to '', edit_user_path(user),class: "btn btn-border fab fa-whmcs edit_user_#{user.id}" %>
     <% end %>
   </div>
 </div>
