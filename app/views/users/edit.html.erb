@@ -1,32 +1,45 @@
-<div class="container">
-  <h1>Edit</h1>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-xs-6 mx-auto"><h4>Edit</h4></div>
+  </div>
   <%= render 'layouts/errors', obj: @user %> <!--エラーメッセージでない-->
   <%= form_with model:@user, loca:true do |f| %>
 
-    <div>
+    <div class="row mt-5 d-flex justify-content-center">
       <%= attachment_image_tag @user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg"%>
       <label for="inputImage">ProfileImage</label>
       <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
     </div>
-    <div>
-      <%= f.label "Name1" %>
-      <%= f.text_field :name, autofocus: true, class: "form-control name" %>
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form_line col-7 col-lg-6">
+        <%= f.label "Cp name" %><br />
+        <%= f.text_field :couple_name, autofocus: true, class:"input-text form-js-input",placeholder: "tonecp-1201"  %>
+      </div>
     </div>
-    <div>
-      <%= f.label "Name2" %>
-      <%= f.text_field :partner_name, autofocus: true, class: "form-control name" %>
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form_line col-7 col-lg-6">
+        <%= f.label "Name1" %><br />
+        <%= f.text_field :name, autofocus: true, class:"input-text form-js-input",placeholder: "とおる" %>
+      </div>
     </div>
-    <div>
-      <%= f.label "cp name" %>
-      <%= f.text_field :couple_name, autofocus: true, class: "form-control name" %>
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form_line col-7 col-lg-6">
+        <%= f.label "Name2" %><br />
+        <%= f.text_field :partner_name, autofocus: true, class:"input-text form-js-input",placeholder: "ねね" %>
+      </div>
     </div>
-    <div>
-      <%= f.label "Email" %>
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "sample@example.com", class: "form-control name" %>
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="form_line col-7 col-lg-6">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, class:"input-text form-js-input",placeholder: "sample@email.com" %>
+      </div>
     </div>
-
-    <%= f.submit "Update" %>
-    <%= link_to "退会",confirm_unsubscribe_path,class: "btn btn-danger" %>
+    <div class="row mt-5 mb-5 offset-md-8 form_btn">
+      <%= f.submit "Update",class:"btn btn-border" %>
+    </div>
+    <div class="row mt-5 mb-5 offset-md-8">
+      <%= link_to "退会",confirm_unsubscribe_path,class:"btn-flat-dashed-border" %>
+    </div>
 
   <% end %>
 </div>

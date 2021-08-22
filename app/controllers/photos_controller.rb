@@ -24,6 +24,7 @@ class PhotosController < ApplicationController
 
   def edit
     @photo = Photo.find(params[:id])
+    @user = current_user
   end
 
   def update

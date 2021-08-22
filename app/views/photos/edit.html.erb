@@ -1,9 +1,39 @@
-<h1>投稿編集</h1>
-<%= render 'layouts/errors', obj: @photo %>
-<%= form_with model:@photo, local: true do |f| %>
- <h4>Title</h4>
- <%= f.text_field :title %>
- <h4>Body</h4>
- <%= f.text_field :body %>
- <%= f.submit 'Uodate' %>
-<% end %>
+<div class="container mb-3">
+ <div class="row d-flex justify-content-center">
+  <h2>Post our love</h2>
+  <%= render 'layouts/errors', obj: @photo %>
+ </div>
+ <div class="row mt-5 d-flex justify-content-center">
+  <%= form_with model: @photo, local:true do |f| %>
+   <div class="form_line">
+    <%= f.text_field :title, autofocus: true, class:"input-text form-js-input",placeholder: "Title" %>
+   </div>
+   <div class="form_line">
+    <li class="form_title">Name</li>
+    <ul class="radio_conntent ml-auto d-flex justify-content-center ">
+     <li class="radio_text">
+     <%= f.radio_button :name, @user.name, checked: true %>
+     <%= f.label :name,@user.name %>
+     </li>
+     <li class="radio_text">
+     <%= f.radio_button :name, @user.partner_name, checked: true %>
+     <%= f.label :name,@user.partner_name %>
+     </li>
+     <li class="radio_text">
+     <%= f.radio_button :name, @user.name+'+'+@user.partner_name, checked: true %>
+     <%= f.label :name,@user.name+'+'+@user.partner_name %>
+     </li>
+    </ul>
+   </div>
+   <div class="form_line">
+    <%= f.text_field :place, autofocus: true, class:"input-text form-js-input",placeholder: "Place" %>
+   </div>
+   <div class="form_box">
+    <%= f.text_area :body, autofocus: true, class:"input-text form-js-input",placeholder: "Comment" %>
+   </div>
+   <div class="form_btn offset-10 mt-5">
+    <%= f.submit 'Post',class:"btn btn-border" %>
+   </div>
+  <% end %>
+ </div>
+</div>
