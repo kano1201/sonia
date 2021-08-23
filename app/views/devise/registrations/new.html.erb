@@ -30,11 +30,14 @@
         <%= f.date_select :anniversary,use_month_numbers: true, start_year: 2000, end_year: Time.now.year, prompt:"--", class: "form-anv" %>
       </div>
     </div>
-
     <div class="row mt-5 d-flex justify-content-center">
-        <%= attachment_image_tag @user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg"%>
-        <label for="inputImage">ProfileImage</label>
-        <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
+      <div class="col-7 col-lg-6">
+        <%= f.label "ProfileImage" %>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <%= attachment_image_tag @user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg"%>
+      <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
     </div>
 
     <div class="row mt-5 d-flex justify-content-center">
