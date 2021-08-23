@@ -5,6 +5,7 @@
 
 .bookmark_blue{color:#528fff;} //青
 
+/*form_name*/
 .form_title{
 	font: 15px/24px sans-serif;
 	color:#888888;
@@ -12,6 +13,8 @@
 	list-style: none;
 	margin-left: 3px;
 }
+
+/*name_radio*/
 .radio_conntent {
   list-style: none;
   margin-bottom: 0;
@@ -22,4 +25,12 @@
 	display: inline-block;
 	margin-right: 20px;
 	margin-bottom: 0;
+}
+
+span{
+	margin-right: 10px;
+}
+
+.fa-trash , .fa-pen-square{
+	color:#CC6666	;
 }

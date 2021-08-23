@@ -1,6 +1,8 @@
 <div class="new-comment">
   <%= form_with model:[photo,comment], remote: true do |f| %>
-    <%= f.text_area :comment, size:"90x5", placeholder: "Please enter your comments" %>
-    <%= f.submit "送信" %>
+    <%= f.text_area :comment, size:"90x5", placeholder: "Please enter your comments",class:"comment-form" %>
+    <div class="form_btn offset-11">
+    <%= f.submit "Post",class:"btn btn-border" %>
+    </div>
   <% end %>
 </div>
