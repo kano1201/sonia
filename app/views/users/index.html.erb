@@ -1,26 +1,27 @@
 <div class="container">
   <div class="row mt-5 mb-5">
-    <div class="col-xs-12 col-lg-8 col-xl-9 mx-auto">
+    <div class="col-md-8 mx-auto">
       <h5 class="mt-5 mt-lg-0 text-center">Users</h5>
-<% @users.each do |user| %>
-<div>
-  <%= attachment_image_tag(user, :profile_image,width: '10%', height: '10%',fallback: "no_image.jpg")%>
-  <%= link_to user.couple_name,user_path(user.id) %>
-</div>
-<% end %>
-
-<h1>Happy Anniversary</h1>
-<h5 class="mt-5 mt-lg-0 text-center">Users</h5>
-<% @users.each do |user| %>
-  <% if user.anniversary.month | user.anniversary.day == Date.today.month | Date.today.day %>
-    <div>
-      <%= attachment_image_tag(user, :profile_image,width: '10%', height: '10%',fallback: "no_image.jpg")%>
-      <%= link_to user.couple_name,user_path(user.id) %>
+      <%= render 'index', users: @users %>
+      <%= paginate @users %>
     </div>
-  <% end %>
-<% end %>
 
-
+    <div class="aniv-user col-md-3 mx-auto">
+      <h5 class="mt-5 mt-lg-0 pt-1 text-center">Happy Anniversary</h5>
+      <div class="row mt-3">
+        <% @users.each do |user| %>
+          <% if user.anniversary.month | user.anniversary.day == Date.today.month | Date.today.day %>
+            <div class="col-md-2.5" style="margin-left: 60px;">
+              <div class="row mt-3">
+                <div class="col-md-12 text-left">
+                  <%= attachment_image_tag(user, :profile_image,:fill, 50, 50, fallback: "no_image.jpg", size: "50x50",class: "rounded-circle")%>
+                  <%= link_to user.couple_name,user_path(user.id) %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
