@@ -1,14 +1,21 @@
-<div class="container mb-3">
+<div class="container mb-5">
  <div class="row d-flex justify-content-center">
-  <h2>Post our love</h2>
+  <h2>Edit Post</h2>
   <%= render 'layouts/errors', obj: @photo %>
  </div>
- <div class="row mt-5 d-flex justify-content-center">
   <%= form_with model: @photo, local:true do |f| %>
-   <div class="form_line">
-    <%= f.text_field :title, autofocus: true, class:"input-text form-js-input",placeholder: "Title" %>
+   <div class="row mt-5 d-flex justify-content-center">
+    <div class="col-6 col-lg-5 text-center">
+     <%= attachment_image_tag @photo, :image, width: "70%",height: "auto", fallback: "no_image.jpg" %>
+    </div>
    </div>
-   <div class="form_line">
+   <div class="row mt-5 d-flex justify-content-center">
+    <div class="form_line col-6 col-lg-5">
+     <%= f.text_field :title, autofocus: true, class:"input-text form-js-input",placeholder: "Title" %>
+    </div>
+   </div>
+   <div class="row mt-5 d-flex justify-content-center">
+   <div class="form_line col-6 col-lg-5">
     <li class="form_title">Name</li>
     <ul class="radio_conntent ml-auto d-flex justify-content-center ">
      <li class="radio_text">
@@ -25,14 +32,19 @@
      </li>
     </ul>
    </div>
-   <div class="form_line">
-    <%= f.text_field :place, autofocus: true, class:"input-text form-js-input",placeholder: "Place" %>
    </div>
-   <div class="form_box">
-    <%= f.text_area :body, autofocus: true, class:"input-text form-js-input",placeholder: "Comment" %>
+   <div class="row mt-5 d-flex justify-content-center">
+    <div class="form_line col-6 col-lg-5">
+     <%= f.text_field :place, autofocus: true, class:"input-text form-js-input",placeholder: "Place" %>
+    </div>
    </div>
-   <div class="form_btn offset-10 mt-5">
-    <%= f.submit 'Post',class:"btn btn-border" %>
+   <div class="row mt-5 d-flex justify-content-center">
+    <div class="form_box col-6 col-lg-5">
+     <%= f.text_area :body, autofocus: true, class:"input-text form-js-input",placeholder: "Comment" %>
+    </div>
+   </div>
+   <div class="form_btn offset-md-8 mt-5">
+    <%= f.submit 'Update',class:"btn btn-border" %>
    </div>
   <% end %>
  </div>

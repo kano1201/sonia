@@ -1,35 +1,41 @@
 <div class="container mt-3">
   <div class="row">
-    <div class="col-xs-6 mx-auto"><h4>Edit</h4></div>
+    <div class="col-xs-6 mx-auto"><h4>Edit Profile</h4></div>
   </div>
   <%= render 'layouts/errors', obj: @user %> <!--エラーメッセージでない-->
   <%= form_with model:@user, loca:true do |f| %>
 
     <div class="row mt-5 d-flex justify-content-center">
-      <%= attachment_image_tag @user, :profile_image, width: '10%', height: '10%', fallback: "no_image.jpg"%>
-      <label for="inputImage">ProfileImage</label>
-      <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
+      <div class="col-6 col-lg-5 text-center">
+        <%= attachment_image_tag @user, :profile_image, :fill,200,200, fallback: "no_image.jpg", size: "200x200"%>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="form_line col-6 col-lg-5">
+        <%= f.label "Profile Image" %><br />
+        <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
+      </div>
     </div>
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form_line col-7 col-lg-6">
+      <div class="form_line col-6 col-lg-5">
         <%= f.label "Cp name" %><br />
         <%= f.text_field :couple_name, autofocus: true, class:"input-text form-js-input",placeholder: "tonecp-1201"  %>
       </div>
     </div>
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form_line col-7 col-lg-6">
+      <div class="form_line col-6 col-lg-5">
         <%= f.label "Name1" %><br />
         <%= f.text_field :name, autofocus: true, class:"input-text form-js-input",placeholder: "とおる" %>
       </div>
     </div>
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form_line col-7 col-lg-6">
+      <div class="form_line col-6 col-lg-5">
         <%= f.label "Name2" %><br />
         <%= f.text_field :partner_name, autofocus: true, class:"input-text form-js-input",placeholder: "ねね" %>
       </div>
     </div>
     <div class="row mt-5 d-flex justify-content-center">
-      <div class="form_line col-7 col-lg-6">
+      <div class="form_line col-6 col-lg-5">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, class:"input-text form-js-input",placeholder: "sample@email.com" %>
       </div>
