@@ -1,7 +1,13 @@
-<% if @model == 'user' %>
-  <h3>User search for "<%= @content %>"</h3>
-  <%= render 'users/index', users: @records %>
-<% elsif @model == 'photo' %>
-  <h3>Posts search for "<%= @content %>"</h3>
-  <%= render 'photos/index', photos: @records %>
-<% end %>
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-xs-12 col-lg-8 col-xl-9 mx-auto">
+      <% if @model == 'user' %>
+         <h5 class="mt-5 mt-lg-0 text-center">User search for "<%= @content %>"</h5>
+        <%= render 'users/index', users: @records %>
+      <% elsif @model == 'photo' %>
+         <h5 class="mt-5 mt-lg-0 text-center">Posts search for "<%= @content %>"</h5>
+        <%= render 'photos/index', photos: @records %>
+      <% end %>
+    </div>
+  </div>
+</div>
