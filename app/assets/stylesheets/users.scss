@@ -78,7 +78,26 @@
   color: #CCCCCC;
 }
 
-/**/
+/*anniversary user*/
 .aniv-user{
   border: 1px solid #CC3333;
+}
+
+/*weather*/
+#btn{
+  border: 1px solid #CC3333;
+  color:#CC3333;
+  background:#fff;
+}
+#btn:hover {
+  color: #fff;
+  background: #CC3333;
+}
+
+#cityname{
+  border: 1px solid #CC3333;
+}
+
+.weather{
+  color:#888888	;
 }
