@@ -12,15 +12,17 @@
       <h5 class="mt-5 mt-lg-0 pt-1 text-center">Happy Anniversary</h5>
       <div class="row mt-3">
         <% @users.each do |user| %>
-          <% if user.anniversary.month | user.anniversary.day == Date.today.month | Date.today.day %>
-            <div class="col-md-2.5" style="margin-left: 60px;">
-              <div class="row mt-3">
-                <div class="col-md-12 text-left">
-                  <%= attachment_image_tag(user, :profile_image,:fill, 50, 50, fallback: "no_image.jpg", size: "50x50",class: "rounded-circle")%>
-                  <%= link_to user.couple_name,user_path(user.id) %>
+          <% unless user.is_deleted == true %>
+            <% if user.anniversary.month | user.anniversary.day == Date.today.month | Date.today.day %>
+              <div class="col-md-2.5" style="margin-left: 60px;">
+                <div class="row mt-3">
+                  <div class="col-md-12 text-left">
+                    <%= attachment_image_tag(user, :profile_image,:fill, 50, 50, fallback: "no_image.jpg", size: "50x50",class: "rounded-circle")%>
+                    <%= link_to user.couple_name,user_path(user.id) %>
+                  </div>
                 </div>
               </div>
-            </div>
+            <% end %>
           <% end %>
         <% end %>
       </div>
