@@ -19,7 +19,7 @@
 
 .container,.container-fluid, h6 {
   font-family: 'Noto Serif JP', serif;
-  color:#666666;	
+  color:#666666;
 }
 
 .fa, .fas {
@@ -156,4 +156,21 @@ textarea{
 .search_select{
   border: 1px solid #CC3333;
   color:#CC3333;
+}
+
+/*pagination*/
+.pagination {
+  justify-content: center;
+
+}
+
+.pagination{
+  li,a {
+  border: none;     /*枠線をなくす*/
+  color: #CCCCCC;   /*文字の色を変える*/
+
+}
+  .active{
+    background:#CC3333;
+  }
 }
