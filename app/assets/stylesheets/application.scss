@@ -132,3 +132,23 @@ textarea{
 .card-text{
   color:#888888;
 }
+
+/*search form*/
+.search_text {
+  border: 1px solid #CC3333;
+}
+
+.search_btn{
+  border: 1px solid #CC3333;
+  color:#CC3333;
+  background:#fff;
+}
+.search_btn:hover {
+  color: #fff;
+  background: #CC3333;
+}
+
+.search_select{
+  border: 1px solid #CC3333;
+  color:#CC3333;
+}

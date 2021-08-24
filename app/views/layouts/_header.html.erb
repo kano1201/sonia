@@ -25,9 +25,9 @@
             </li>
             <li class="search_form">
               <%= form_with url: search_path, method: :get, local: true do |f| %>
-                <%= f.text_field :content %>
-                <%= f.select :model, options_for_select({"User" => "user", "Post" =>"photo"}) %>
-                <%= f.submit 'Search' %>
+                <%= f.text_field :content, class:"search_text" %>
+                <%= f.select :model, options_for_select({"User" => "user", "Post" =>"photo"}),{}, {class: 'search_select'} %>
+                <button class="search_btn" type="submit"><i class="fas fa-search"></i></button>
               <% end %>
             </li>
           </ul>
