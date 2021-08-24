@@ -2,7 +2,9 @@
   <div class="row mt-5 mb-5">
     <div class="col-md-8 mx-auto">
       <h5 class="mt-5 mt-lg-0 text-center">Users</h5>
-      <%= render 'index', users: @users %>
+      <div class="row mt-3 ml-4">
+        <%= render 'index', users: @users %>
+      </div>
       <%= paginate @users %>
     </div>
 

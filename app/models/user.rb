@@ -19,6 +19,7 @@ class User < ApplicationRecord
   validates :partner_name, presence: true
   validates :couple_name, presence: true
   validates :email, presence: true
+  validates :anniversary, presence: true
 
   def follow(user_id)
     relationships.create(followed_id: user_id)

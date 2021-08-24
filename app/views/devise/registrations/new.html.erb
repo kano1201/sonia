@@ -42,14 +42,14 @@
 
     <div class="row mt-5 d-flex justify-content-center">
       <div class="form_line col-7 col-lg-6">
-        <%= f.label :email %><br />
+        <%= f.label "Email" %><br />
         <%= f.email_field :email, autofocus: true, class:"input-text form-js-input",placeholder: "sample@email.com" %>
       </div>
     </div>
 
     <div class="row mt-5 d-flex justify-content-center">
       <div class="form_line col-7 col-lg-6">
-        <%= f.label :password %>
+        <%= f.label "Password" %>
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />

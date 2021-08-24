@@ -2,8 +2,11 @@
   <div class="row">
     <div class="col-xs-6 mx-auto"><h4>Edit Profile</h4></div>
   </div>
-  <%= render 'layouts/errors', obj: @user %> <!--エラーメッセージでない-->
-  <%= form_with model:@user, loca:true do |f| %>
+  <div class="row">
+    <div class="col-xs-6 mx-auto"><%= render 'layouts/errors', obj: @user %></div>
+  </div>
+  
+  <%= form_with model: @user, local:true do |f| %>
 
     <div class="row mt-5 d-flex justify-content-center">
       <div class="col-6 col-lg-5 text-center">
@@ -36,7 +39,7 @@
     </div>
     <div class="row mt-5 d-flex justify-content-center">
       <div class="form_line col-6 col-lg-5">
-        <%= f.label :email %><br />
+        <%= f.label "Email" %><br />
         <%= f.email_field :email, autofocus: true, class:"input-text form-js-input",placeholder: "sample@email.com" %>
       </div>
     </div>

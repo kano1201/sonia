@@ -111,7 +111,7 @@
   right: -14px;
 }
 
-/* ========= ホバー時のスタイル ======== */
+/* ホバー時のスタイル */
 
 /* ボタンホバー時のスタイル */
 .love-btn:hover {
@@ -130,7 +130,7 @@
   animation: heart 1.5s 0.2s infinite ease-out;
 }
 
-/* ========= アニメーションの設定 ======== */
+/* アニメーションの設定 */
 @keyframes heart {
   0% {
     transform: translateY(0) scale(1);
@@ -148,7 +148,7 @@
   }
 }
 
-/* ========= SPのスタイル ======== */
+/* SPのスタイル */
 @media screen and (max-width: 768px) {
 
   /* ボタン本体のスタイル */
@@ -169,14 +169,14 @@
   }
 }
 
-// topページ
+/*top*/
 #top-mv{
   position: relative;
   top: 50%;
 }
 
 
-// topのmain画像
+/*top main img*/
 #amv{
   position: absolute;
   top: 0;
@@ -204,7 +204,7 @@
   color:#C0C0C0;
 }
 
-// フェードイン //
+/* fadein */
 .scroll-space{
   box-sizing: border-box;
   overflow: hidden;
@@ -231,7 +231,7 @@
   }
 }
 
-/*top user*/
+/*top user box*/
 .top_user{
     margin:2em 0;
     position: relative;

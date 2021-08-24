@@ -3,20 +3,21 @@
   <div class="row">
     <div class="col-xs-6 mx-auto"><h2>Login</h2></div>
   </div>
-
+  <div class"row">
+    <div class="col-xs-6 mx-auto"><%= render "devise/shared/error_messages", resource: resource %></div>
+  </div>
   <%= form_with model: @user, url: user_session_path, local: true do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
+  
     <div class="row mt-5">
       <div class="form_line col-8 mx-auto col-lg-5">
-        <%= f.label :email %><br />
+        <%= f.label "Email" %><br />
         <%= f.email_field :email, autofocus: true, class:"input-text form-js-input",placeholder: "sample@email.com" %>
       </div>
     </div>
 
     <div class="row mt-3">
       <div class="form_line col-8 mx-auto col-lg-5">
-        <%= f.label :password %><br />
+        <%= f.label "Password" %><br />
         <%= f.password_field :password, class:"input-text form-js-input" %>
       </div>
     </div>
