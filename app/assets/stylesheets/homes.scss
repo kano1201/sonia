@@ -99,14 +99,14 @@
 
 /* 左上のハートのスタイル */
 .love-btn::before {
-  background-image: url('heart.svg');
+  background-image: image-url('heart.svg');
   top: 0;
   left: -12px;
 }
 
 /* 右下のハートのスタイル */
 .love-btn::after {
-  background-image: url('heart-reverse.svg');
+  background-image: image-url('heart-reverse.svg');
   bottom: -6px;
   right: -14px;
 }
