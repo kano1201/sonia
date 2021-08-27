@@ -27,7 +27,7 @@ User.create!(
       password: 'aomori01',
       password_confirmation: 'aomori01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/image5.JPG')
     },
     {
       email: 'akita@email.com',
@@ -38,7 +38,7 @@ User.create!(
       password: 'akita01',
       password_confirmation: 'akita01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user2.JPG')
     },
     {
       email: 'iwate@email.com',
@@ -49,7 +49,7 @@ User.create!(
       password: 'iwate01',
       password_confirmation: 'iwate01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user3.JPG')
     },
     {
       email: 'yamagata@email.com',
@@ -60,7 +60,7 @@ User.create!(
       password: 'yamagata01',
       password_confirmation: 'yamagata01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user1.JPG')
     },
     {
       email: 'miyagi@email.com',
@@ -71,7 +71,7 @@ User.create!(
       password: 'iwate01',
       password_confirmation: 'iwate01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user4.JPG')
     },
     {
       email: 'fukushima@email.com',
@@ -82,7 +82,7 @@ User.create!(
       password: 'fukushima01',
       password_confirmation: 'fukushima01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/image1.JPG')
     },
     {
       email: 'gunma@email.com',
@@ -93,7 +93,7 @@ User.create!(
       password: 'gunma01',
       password_confirmation: 'gunma01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user5.JPG')
     },
     {
       email: 'tochigi@email.com',
@@ -104,7 +104,7 @@ User.create!(
       password: 'tochigi01',
       password_confirmation: 'tochigi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/image2.JPG')
     },
     {
       email: 'ibaraki@email.com',
@@ -115,7 +115,7 @@ User.create!(
       password: 'ibaraki01',
       password_confirmation: 'ibaraki01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/image3.JPG')
     },
     {
       email: 'saitama@email.com',
@@ -126,7 +126,7 @@ User.create!(
       password: 'saitama01',
       password_confirmation: 'saitama01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user6.JPG')
     },
     {
       email: 'tokyo@email.com',
@@ -137,7 +137,7 @@ User.create!(
       password: 'tokyo01',
       password_confirmation: 'tokyo01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/image4.JPG')
     },
     {
       email: 'chiba@email.com',
@@ -148,7 +148,7 @@ User.create!(
       password: 'chiba01',
       password_confirmation: 'chiba01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user7.JPG')
     },
     {
       email: 'yamanashi@email.com',
@@ -159,7 +159,7 @@ User.create!(
       password: 'yamanashi01',
       password_confirmation: 'yamanashi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user8.JPG')
     },
     {
       email: 'kanagawa@email.com',
@@ -170,7 +170,7 @@ User.create!(
       password: 'kanagawa01',
       password_confirmation: 'kanagawa01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user9.JPG')
     },
     {
       email: 'shizuoka@email.com',
@@ -181,7 +181,7 @@ User.create!(
       password: 'shizuoka01',
       password_confirmation: 'shizuoka01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user11.JPG')
     },
     {
       email: 'nagano@email.com',
@@ -192,7 +192,7 @@ User.create!(
       password: 'nagano01',
       password_confirmation: 'nagano01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user12.JPG')
     },
     {
       email: 'toyama@email.com',
@@ -203,7 +203,7 @@ User.create!(
       password: 'toyama01',
       password_confirmation: 'toyama01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user13.JPG')
     },
     {
       email: 'ishikawa@email.com',
@@ -214,7 +214,7 @@ User.create!(
       password: 'ishikawa01',
       password_confirmation: 'ishikawa01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/image6.JPG')
     },
     {
       email: 'fukui@email.com',
@@ -225,7 +225,7 @@ User.create!(
       password: 'fukui01',
       password_confirmation: 'fukui01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/image7.JPG')
     },
     {
       email: 'gifu@email.com',
@@ -236,18 +236,18 @@ User.create!(
       password: 'gifu01',
       password_confirmation: 'gifu01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user10.JPG')
     },
     {
-      email: 'gifu@email.com',
-      name: 'トム',
-      partner_name: 'マイケル',
-      couple_name: 'tomy_4',
+      email: 'japan@email.com',
+      name: 'スア',
+      partner_name: 'ジニョン',
+      couple_name: 'suni_4',
       anniversary: '2021-9-10',
-      password: 'gifu01',
-      password_confirmation: 'gifu01',
+      password: 'japan01',
+      password_confirmation: 'japan01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user14.JPG')
     },
     {
       email: 'aichi@email.com',
@@ -258,7 +258,7 @@ User.create!(
       password: 'aichi01',
       password_confirmation: 'aichi1',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user15.JPG')
     },
     {
       email: 'shiga@email.com',
@@ -269,7 +269,7 @@ User.create!(
       password: 'shiga01',
       password_confirmation: 'shiga01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user17.JPG')
     },
     {
       email: 'mie@email.com',
@@ -280,7 +280,7 @@ User.create!(
       password: 'mie001',
       password_confirmation: 'mie001',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user16.JPG')
     },
     {
       email: 'nara@email.com',
@@ -291,7 +291,7 @@ User.create!(
       password: 'nara01',
       password_confirmation: 'nara01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user18.JPG')
     },
     {
       email: 'wakayama@email.com',
@@ -302,7 +302,7 @@ User.create!(
       password: 'wakayama1',
       password_confirmation: 'wakayama01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user20.JPG')
     },
     {
       email: 'osaka@email.com',
@@ -313,7 +313,7 @@ User.create!(
       password: 'osaka01',
       password_confirmation: 'osaka01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user21.JPG')
     },
     {
       email: 'kyoto@email.com',
@@ -324,7 +324,7 @@ User.create!(
       password: 'kyoto01',
       password_confirmation: 'kyoto01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user22.JPG')
     },
     {
       email: 'hyogo@email.com',
@@ -335,7 +335,7 @@ User.create!(
       password: 'hyogo01',
       password_confirmation: 'hyogo01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user23.JPG')
     },
     {
       email: 'tottori@email.com',
@@ -346,7 +346,7 @@ User.create!(
       password: 'tottori01',
       password_confirmation: 'tottori01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user24.JPG')
     },
     {
       email: 'okayama@email.com',
@@ -357,7 +357,7 @@ User.create!(
       password: 'okayama01',
       password_confirmation: 'okayama01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/photoimg/picnic.JPG')
     },
     {
       email: 'shimane@email.com',
@@ -368,7 +368,7 @@ User.create!(
       password: 'shimane01',
       password_confirmation: 'shimane01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user25.JPG')
     },
     {
       email: 'hiroshima@email.com',
@@ -379,7 +379,7 @@ User.create!(
       password: 'hiroshima01',
       password_confirmation: 'hiroshima01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user26.JPG')
     },
     {
       email: 'yamaguchi@email.com',
@@ -390,7 +390,7 @@ User.create!(
       password: 'yamaguchi01',
       password_confirmation: 'yamaguchi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/photoimg/gacha.JPG')
     },
     {
       email: 'ehime@email.com',
@@ -401,7 +401,7 @@ User.create!(
       password: 'ehime01',
       password_confirmation: 'ehime01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user29.JPG')
     },
     {
       email: 'kagawa@email.com',
@@ -412,7 +412,7 @@ User.create!(
       password: 'kagawa01',
       password_confirmation: 'kagawa01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user27.JPG')
     },
     {
       email: 'tokushima@email.com',
@@ -423,7 +423,7 @@ User.create!(
       password: 'tokushima01',
       password_confirmation: 'tokushima01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user28.JPG')
     },
     {
       email: 'kouchi@email.com',
@@ -434,7 +434,7 @@ User.create!(
       password: 'kouchi01',
       password_confirmation: 'kouchi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user35.JPG')
     },
     {
       email: 'fukuoka@email.com',
@@ -445,7 +445,7 @@ User.create!(
       password: 'fukuoka01',
       password_confirmation: 'fukuoka01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user36.JPG')
     },
     {
       email: 'saga@email.com',
@@ -456,7 +456,7 @@ User.create!(
       password: 'saga01',
       password_confirmation: 'saga01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user19.jpg')
     },
     {
       email: 'nagasaki@email.com',
@@ -467,7 +467,7 @@ User.create!(
       password: 'nagasaki01',
       password_confirmation: 'nagasaki01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user34.JPG')
     },
     {
       email: 'oita@email.com',
@@ -478,7 +478,7 @@ User.create!(
       password: 'oita01',
       password_confirmation: 'oita01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user33.JPG')
     },
     {
       email: 'kumamoto@email.com',
@@ -489,7 +489,7 @@ User.create!(
       password: 'kumamoto01',
       password_confirmation: 'kumamoto01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/photoimg/coffe.jpg')
     },
     {
       email: 'miyagi@email.com',
@@ -500,7 +500,7 @@ User.create!(
       password: 'miyagi01',
       password_confirmation: 'miyagi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/photoimg/beer.jpg')
     },
     {
       email: 'kagoshima@email.com',
@@ -511,7 +511,7 @@ User.create!(
       password: 'kagoshima01',
       password_confirmation: 'kagoshima01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user32.JPG')
     },
     {
       email: 'okinawa@email.com',
@@ -522,7 +522,7 @@ User.create!(
       password: 'okinawa01',
       password_confirmation: 'okinawa01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user31.JPG')
     },
     {
       email: 'nihon@email.com',
@@ -533,7 +533,168 @@ User.create!(
       password: 'nihon01',
       password_confirmation: 'nihon01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      prfile_image: File.open('./app/assets/images/userimg/user30.jpg')
     }
   ]
 )
+
+User.all.each do |user|
+  user.photos.create!(
+    [
+      {
+        title: 'カフェ',
+        name: user.name,
+        place: '7cafe Tokyo',
+        body: 'おしゃれなカフェでランチしてきました！お店の雰囲気良くて、ご飯も美味しくて最高！',
+        image: File.open('./app/assets/images/image1.JPG')
+      },
+      {
+        title: '一年記念日',
+        name: user.couple_name,
+        place: 'sky hotel',
+        body: '一年記念日！海を見ながらプールは神！これからもよろしくね♡',
+        image: File.open('./app/assets/images/image5.JPG')
+      },
+      {
+        title: '大人のゲームセンター',
+        name: user.partner_name,
+        place: 'pop city',
+        body: 'ヴィンテージのおもちゃや置物で世界観が最高に可愛い！クレーンゲームいつ振りにしたかなぁ。',
+        image: File.open('./app/assets/images/image2.JPG')
+      },
+      {
+        title: 'イブリの森美術館',
+        name: user.name,
+        place: '東京都三鷹市',
+        body: '千円でキャラクターと写真が撮れたり、レアな原画見れたりコスパが良すぎる！また行こうね！',
+        image: File.open('./app/assets/images/userimg/user23.JPG')
+      },
+      {
+        title: 'ドライブデート',
+        name: user.couple_name,
+        place: '逗子海岸',
+        body: '久々にドライブしながら遠出デート！海最高！！',
+        image: File.open('./app/assets/images/userimg/user9.JPG')
+      },
+      {
+        title: 'カフェランチ',
+        name: user.name,
+        place: 'sandwich cafe -mogu-',
+        body: '小麦を使わないサンドウィッチ！めちゃくちゃ美味しかった！リピ確！',
+        image: File.open('./app/assets/images/image4.JPG')
+      },
+      {
+        title: 'Happy birthday!',
+        name: user.partner_name,
+        place: 'おうち',
+        body: '誕生日おめでとう！喜んでくれてよかった！！大好きだよ！',
+        image: File.open('./app/assets/images/photoimg/birthday.JPG')
+      },
+      {
+        title: 'OKTOBERFEST',
+        name: user.name,
+        place: 'ドイツ',
+        body: 'ドイツビール飲み比べ！やっぱ日本のが好きかも。。。',
+        image: File.open('./app/assets/images/userimg/user19.jpg')
+      },
+      {
+        title: 'ピクニック',
+        name: user.couple_name,
+        place: '山の丘公園',
+        body: 'お弁当持ってピクニックに！のんびり良い休日でした！',
+        image: File.open('./app/assets/images/photoimg/picnic.JPG')
+      },
+      {
+        title: 'スノボー',
+        name: user.name,
+        place: 'プランススキー場',
+        body: '過去pic。去年のスノボー楽しかったなぁ今年も行きたいね！',
+        image: File.open('./app/assets/images/userimg/user5.JPG')
+      },
+      {
+        title: '昭和レトロ',
+        name: user.partner_name,
+        place: '東武遊園地',
+        body: '昭和にタイムスリップしたみたいな遊園地！いい写たくさん撮れた！',
+        image: File.open('./app/assets/images/userimg/user18.JPG')
+      },
+      {
+        title: '何でもない日',
+        name: user.name,
+        place: 'stay home',
+        body: '特になんの日というわけでもないけどケーキ！2人でお茶しました！甘々',
+        image: File.open('./app/assets/images/photoimg/cake.jpg')
+      },
+      {
+        title: '昼飲み',
+        name: user.partner_name,
+        place: '青羽',
+        body: '昼からビールは神！！酔ってる相方も神！！',
+        image: File.open('./app/assets/images/photoimg/beer.jpg')
+      },
+      {
+        title: 'イルミネーション',
+        name: user.couple_name,
+        place: 'ハウスセンボス',
+        body: 'イルミネーション見に行きました！キラキラ綺麗だったぁ',
+        image: File.open('./app/assets/images/image7.JPG')
+      },
+      {
+        title: '夢の国',
+        name: user.couple_name,
+        place: 'デズニーワールド',
+        body: '何回行っても楽しい！またお揃いして行きたいですね！！',
+        image: File.open('./app/assets/images/userimg/user3.JPG')
+      },
+      {
+        title: '海カフェ',
+        name: user.name,
+        place: 'cafe the c',
+        body: '目の前に海が広がるカフェ！海鮮プレート美味！！',
+        image: File.open('./app/assets/images/photoimg/user10.JPG')
+      },
+      {
+        title: 'いつもありがとう',
+        name: user.partner_name,
+        place: '隣',
+        body: '久々に写真撮った？笑いつも側にいてくれてありがと！らぶい',
+        image: File.open('./app/assets/images/userimg/user8.JPG')
+      },
+      {
+        title: '喫茶店',
+        name: user.name,
+        place: '珈琲 杏樹',
+        body: 'レトロな喫茶店。サイフォンで淹れてくれる珈琲はエモい',
+        image: File.open('./app/assets/images/photoimg/coffe.jpg')
+      },
+      {
+        title: '大桶谷',
+        name: user.name,
+        place: '箱根',
+        body: '黒卵美味しい！景色よき！！',
+        image: File.open('./app/assets/images/userimg/user12.JPG')
+      },
+      {
+        title: 'ガチャ',
+        name: user.couple_name,
+        place: 'カプセルの中',
+        body: '最近2人でガチャガチャハマり中…可愛すぎて課金しがちなきなき',
+        image: File.open('./app/assets/images/photoimg/gacha.JPG')
+      },
+      {
+        title: '旅行',
+        name: user.partner_name,
+        place: '福岡県糸島市',
+        body: '旅行行ってきた！海綺麗だし夫婦岩みれて良きだったね！',
+        image: File.open('./app/assets/images/userimg/user1.jpg')
+      },
+      {
+        title: 'お揃い',
+        name: user.name,
+        place: 'ここ',
+        body: '2人でお揃いの！名前と記念日入り♡',
+        image: File.open('./app/assets/images/userimg/user29.JPG')
+      }
+    ]
+  )
+end
