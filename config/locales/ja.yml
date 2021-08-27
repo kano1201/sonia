@@ -1,5 +1,9 @@
 ja:
   activerecord:
+    errors:
+      messages:
+        record_invalid: 'バリデーションに失敗しました: %{errors}'
+        
     attributes:
       user:
         couple_name: Cpname
@@ -22,6 +26,14 @@ ja:
       - :year
       - :month
       - :day
+      
+  views:
+    pagination:
+      previous: "« 前ページ"
+      next: "次ページ »"
+      truncate: "..."
+      first: "最初"
+      last: "最後"
 
   devise:
     confirmations:

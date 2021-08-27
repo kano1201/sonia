@@ -33,6 +33,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.page(params[:page]).reverse_order
+    @ausers = User.all
   end
 
   private

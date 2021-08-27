@@ -8,7 +8,7 @@
 User.create!(
   [
     {
-      email: 'hokkaido@email.com',
+      email: Faker::Internet.email,
       name: '夢',
       partner_name: '拓哉',
       couple_name: 'yuta_cp831',
@@ -16,10 +16,10 @@ User.create!(
       password: 'hokkaido01',
       password_confirmation: 'hokkaido01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user.JPG')
     },
     {
-      email: 'aomori@email.com',
+      email: Faker::Internet.email,
       name: 'こうき',
       partner_name: '隼人',
       couple_name: 'kt_123',
@@ -27,10 +27,10 @@ User.create!(
       password: 'aomori01',
       password_confirmation: 'aomori01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/image5.JPG')
+      profile_image: File.open('./app/assets/images/image5.JPG')
     },
     {
-      email: 'akita@email.com',
+      email: Faker::Internet.email,
       name: 'nene',
       partner_name: 'haru',
       couple_name: 'naru_78',
@@ -38,10 +38,10 @@ User.create!(
       password: 'akita01',
       password_confirmation: 'akita01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user2.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user2.jpg')
     },
     {
-      email: 'iwate@email.com',
+      email: Faker::Internet.email,
       name: '桜',
       partner_name: '純恋',
       couple_name: 'hanamaru',
@@ -49,10 +49,10 @@ User.create!(
       password: 'iwate01',
       password_confirmation: 'iwate01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user3.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user3.JPG')
     },
     {
-      email: 'yamagata@email.com',
+      email: Faker::Internet.email,
       name: '空',
       partner_name: '太陽',
       couple_name: 'seiten2',
@@ -60,10 +60,10 @@ User.create!(
       password: 'yamagata01',
       password_confirmation: 'yamagata01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user1.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user1.jpg')
     },
     {
-      email: 'miyagi@email.com',
+      email: Faker::Internet.email,
       name: 'ryou',
       partner_name: 'ayaka',
       couple_name: 'ryo_aya',
@@ -71,10 +71,10 @@ User.create!(
       password: 'iwate01',
       password_confirmation: 'iwate01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user4.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user4.JPG')
     },
     {
-      email: 'fukushima@email.com',
+      email: Faker::Internet.email,
       name: 'あおい',
       partner_name: '奏多',
       couple_name: 'onigiri1',
@@ -82,10 +82,10 @@ User.create!(
       password: 'fukushima01',
       password_confirmation: 'fukushima01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/image1.JPG')
+      profile_image: File.open('./app/assets/images/image1.JPG')
     },
     {
-      email: 'gunma@email.com',
+      email: Faker::Internet.email,
       name: 'amy',
       partner_name: 'satoru',
       couple_name: 'tomato5',
@@ -93,10 +93,10 @@ User.create!(
       password: 'gunma01',
       password_confirmation: 'gunma01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user5.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user5.JPG')
     },
     {
-      email: 'tochigi@email.com',
+      email: Faker::Internet.email,
       name: 'jhon',
       partner_name: 'arthur',
       couple_name: 'ichigo15',
@@ -104,10 +104,10 @@ User.create!(
       password: 'tochigi01',
       password_confirmation: 'tochigi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/image2.JPG')
+      profile_image: File.open('./app/assets/images/image2.JPG')
     },
     {
-      email: 'ibaraki@email.com',
+      email: Faker::Internet.email,
       name: 'yuji',
       partner_name: 'koji',
       couple_name: 'gomoku_',
@@ -115,10 +115,10 @@ User.create!(
       password: 'ibaraki01',
       password_confirmation: 'ibaraki01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/image3.JPG')
+      profile_image: File.open('./app/assets/images/image3.JPG')
     },
     {
-      email: 'saitama@email.com',
+      email: Faker::Internet.email,
       name: 'アレックス',
       partner_name: 'イブ',
       couple_name: 'banana7',
@@ -126,10 +126,10 @@ User.create!(
       password: 'saitama01',
       password_confirmation: 'saitama01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user6.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user6.JPG')
     },
     {
-      email: 'tokyo@email.com',
+      email: Faker::Internet.email,
       name: '駿',
       partner_name: 'bob',
       couple_name: 'oden_67',
@@ -137,10 +137,10 @@ User.create!(
       password: 'tokyo01',
       password_confirmation: 'tokyo01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/image4.JPG')
+      profile_image: File.open('./app/assets/images/image4.JPG')
     },
     {
-      email: 'chiba@email.com',
+      email: Faker::Internet.email,
       name: '美子',
       partner_name: '真昼',
       couple_name: 'ganbare2',
@@ -148,10 +148,10 @@ User.create!(
       password: 'chiba01',
       password_confirmation: 'chiba01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user7.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user7.JPG')
     },
     {
-      email: 'yamanashi@email.com',
+      email: Faker::Internet.email,
       name: 'りん',
       partner_name: '撫子',
       couple_name: 'camp-7',
@@ -159,10 +159,10 @@ User.create!(
       password: 'yamanashi01',
       password_confirmation: 'yamanashi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user8.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user8.JPG')
     },
     {
-      email: 'kanagawa@email.com',
+      email: Faker::Internet.email,
       name: 'yuya',
       partner_name: 'kano',
       couple_name: 'yk_1201',
@@ -170,10 +170,10 @@ User.create!(
       password: 'kanagawa01',
       password_confirmation: 'kanagawa01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user9.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user9.JPG')
     },
     {
-      email: 'shizuoka@email.com',
+      email: Faker::Internet.email,
       name: 'tea',
       partner_name: 'sea',
       couple_name: 'umi_872',
@@ -181,10 +181,10 @@ User.create!(
       password: 'shizuoka01',
       password_confirmation: 'shizuoka01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user11.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user11.JPG')
     },
     {
-      email: 'nagano@email.com',
+      email: Faker::Internet.email,
       name: '冬太',
       partner_name: '夏子',
       couple_name: 'haruaki',
@@ -192,10 +192,10 @@ User.create!(
       password: 'nagano01',
       password_confirmation: 'nagano01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user12.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user12.JPG')
     },
     {
-      email: 'toyama@email.com',
+      email: Faker::Internet.email,
       name: 'eri',
       partner_name: 'anna',
       couple_name: 'peach89',
@@ -203,10 +203,10 @@ User.create!(
       password: 'toyama01',
       password_confirmation: 'toyama01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user13.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user13.JPG')
     },
     {
-      email: 'ishikawa@email.com',
+      email: Faker::Internet.email,
       name: 'oliver',
       partner_name: 'austin',
       couple_name: 'omaturi8',
@@ -214,10 +214,10 @@ User.create!(
       password: 'ishikawa01',
       password_confirmation: 'ishikawa01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/image6.JPG')
+      profile_image: File.open('./app/assets/images/image6.JPG')
     },
     {
-      email: 'fukui@email.com',
+      email: Faker::Internet.email,
       name: 'まさき',
       partner_name: '正人',
       couple_name: 'm_m53',
@@ -225,10 +225,10 @@ User.create!(
       password: 'fukui01',
       password_confirmation: 'fukui01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/image7.JPG')
+      profile_image: File.open('./app/assets/images/image7.JPG')
     },
     {
-      email: 'gifu@email.com',
+      email: Faker::Internet.email,
       name: 'トム',
       partner_name: 'マイケル',
       couple_name: 'tomy_4',
@@ -236,10 +236,10 @@ User.create!(
       password: 'gifu01',
       password_confirmation: 'gifu01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user10.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user10.JPG')
     },
     {
-      email: 'japan@email.com',
+      email: Faker::Internet.email,
       name: 'スア',
       partner_name: 'ジニョン',
       couple_name: 'suni_4',
@@ -247,21 +247,21 @@ User.create!(
       password: 'japan01',
       password_confirmation: 'japan01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user14.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user14.JPG')
     },
     {
-      email: 'aichi@email.com',
+      email: Faker::Internet.email,
       name: 'あい',
       partner_name: 'まな',
       couple_name: 'love_48',
       anniversary: '2021-9-11',
       password: 'aichi01',
-      password_confirmation: 'aichi1',
+      password_confirmation: 'aichi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user15.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user15.JPG')
     },
     {
-      email: 'shiga@email.com',
+      email: Faker::Internet.email,
       name: 'biwa',
       partner_name: 'kou',
       couple_name: 'biwako09',
@@ -269,10 +269,10 @@ User.create!(
       password: 'shiga01',
       password_confirmation: 'shiga01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user17.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user17.JPG')
     },
     {
-      email: 'mie@email.com',
+      email: Faker::Internet.email,
       name: 'かける',
       partner_name: '龍',
       couple_name: 'mochi_087',
@@ -280,10 +280,10 @@ User.create!(
       password: 'mie001',
       password_confirmation: 'mie001',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user16.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user16.JPG')
     },
     {
-      email: 'nara@email.com',
+      email: Faker::Internet.email,
       name: 'ほのか',
       partner_name: '健',
       couple_name: 'shika76',
@@ -291,21 +291,21 @@ User.create!(
       password: 'nara01',
       password_confirmation: 'nara01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user18.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user18.JPG')
     },
     {
-      email: 'wakayama@email.com',
+      email: Faker::Internet.email,
       name: 'みかん',
       partner_name: 'すだち',
       couple_name: 'kankitsu',
       anniversary: '2021-9-13',
-      password: 'wakayama1',
+      password: 'wakayama01',
       password_confirmation: 'wakayama01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user20.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user20.JPG')
     },
     {
-      email: 'osaka@email.com',
+      email: Faker::Internet.email,
       name: 'kei',
       partner_name: 'momo',
       couple_name: 'takoyaki',
@@ -313,10 +313,10 @@ User.create!(
       password: 'osaka01',
       password_confirmation: 'osaka01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user21.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user21.JPG')
     },
     {
-      email: 'kyoto@email.com',
+      email: Faker::Internet.email,
       name: '清子',
       partner_name: '昌也',
       couple_name: 'honnoji8',
@@ -324,10 +324,10 @@ User.create!(
       password: 'kyoto01',
       password_confirmation: 'kyoto01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user22.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user22.JPG')
     },
     {
-      email: 'hyogo@email.com',
+      email: Faker::Internet.email,
       name: 'ひろし',
       partner_name: 'みさえ',
       couple_name: 'kasukabe3',
@@ -335,10 +335,10 @@ User.create!(
       password: 'hyogo01',
       password_confirmation: 'hyogo01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user23.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user23.JPG')
     },
     {
-      email: 'tottori@email.com',
+      email: Faker::Internet.email,
       name: 'miyuki',
       partner_name: 'sara',
       couple_name: 'sa9_t',
@@ -346,10 +346,10 @@ User.create!(
       password: 'tottori01',
       password_confirmation: 'tottori01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user24.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user24.JPG')
     },
     {
-      email: 'okayama@email.com',
+      email: Faker::Internet.email,
       name: '大吾',
       partner_name: 'ノブ',
       couple_name: 'chidori12',
@@ -357,10 +357,10 @@ User.create!(
       password: 'okayama01',
       password_confirmation: 'okayama01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/photoimg/picnic.JPG')
+      profile_image: File.open('./app/assets/images/photoimg/picnic.JPG')
     },
     {
-      email: 'shimane@email.com',
+      email: Faker::Internet.email,
       name: '杏',
       partner_name: 'はな',
       couple_name: 'ice_na',
@@ -368,10 +368,10 @@ User.create!(
       password: 'shimane01',
       password_confirmation: 'shimane01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user25.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user25.JPG')
     },
     {
-      email: 'hiroshima@email.com',
+      email: Faker::Internet.email,
       name: '若葉',
       partner_name: '桜',
       couple_name: 'haru_34',
@@ -379,10 +379,10 @@ User.create!(
       password: 'hiroshima01',
       password_confirmation: 'hiroshima01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user26.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user26.JPG')
     },
     {
-      email: 'yamaguchi@email.com',
+      email: Faker::Internet.email,
       name: 'cony',
       partner_name: 'kenta',
       couple_name: 'kanabun1',
@@ -390,10 +390,10 @@ User.create!(
       password: 'yamaguchi01',
       password_confirmation: 'yamaguchi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/photoimg/gacha.JPG')
+      profile_image: File.open('./app/assets/images/photoimg/gacha.JPG')
     },
     {
-      email: 'ehime@email.com',
+      email: Faker::Internet.email,
       name: 'のの',
       partner_name: '信之',
       couple_name: 'no_nocp',
@@ -401,10 +401,10 @@ User.create!(
       password: 'ehime01',
       password_confirmation: 'ehime01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user29.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user29.JPG')
     },
     {
-      email: 'kagawa@email.com',
+      email: Faker::Internet.email,
       name: '雅夫',
       partner_name: '智樹',
       couple_name: 'udon_89',
@@ -412,10 +412,10 @@ User.create!(
       password: 'kagawa01',
       password_confirmation: 'kagawa01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user27.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user27.JPG')
     },
     {
-      email: 'tokushima@email.com',
+      email: Faker::Internet.email,
       name: '桃太郎',
       partner_name: '金太郎',
       couple_name: 'oni_02',
@@ -423,10 +423,10 @@ User.create!(
       password: 'tokushima01',
       password_confirmation: 'tokushima01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user28.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user28.JPG')
     },
     {
-      email: 'kouchi@email.com',
+      email: Faker::Internet.email,
       name: 'katy',
       partner_name: 'jack',
       couple_name: 'hello7',
@@ -434,10 +434,10 @@ User.create!(
       password: 'kouchi01',
       password_confirmation: 'kouchi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user35.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user35.JPG')
     },
     {
-      email: 'fukuoka@email.com',
+      email: Faker::Internet.email,
       name: '暦',
       partner_name: 'なお',
       couple_name: 'konan23',
@@ -445,10 +445,10 @@ User.create!(
       password: 'fukuoka01',
       password_confirmation: 'fukuoka01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user36.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user36.JPG')
     },
     {
-      email: 'saga@email.com',
+      email: Faker::Internet.email,
       name: '颯太',
       partner_name: '龍次',
       couple_name: 'sky81',
@@ -456,10 +456,10 @@ User.create!(
       password: 'saga01',
       password_confirmation: 'saga01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user19.jpg')
+      profile_image: File.open('./app/assets/images/userimg/user19.jpg')
     },
     {
-      email: 'nagasaki@email.com',
+      email: Faker::Internet.email,
       name: 'shyu',
       partner_name: 'mei',
       couple_name: 'itoshima',
@@ -467,10 +467,10 @@ User.create!(
       password: 'nagasaki01',
       password_confirmation: 'nagasaki01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user34.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user34.JPG')
     },
     {
-      email: 'oita@email.com',
+      email: Faker::Internet.email,
       name: '環奈',
       partner_name: 'レオン',
       couple_name: 'soba58',
@@ -478,10 +478,10 @@ User.create!(
       password: 'oita01',
       password_confirmation: 'oita01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user33.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user33.JPG')
     },
     {
-      email: 'kumamoto@email.com',
+      email: Faker::Internet.email,
       name: 'kuma',
       partner_name: 'monta',
       couple_name: 'kumamon',
@@ -489,10 +489,10 @@ User.create!(
       password: 'kumamoto01',
       password_confirmation: 'kumamoto01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/photoimg/coffe.jpg')
+      profile_image: File.open('./app/assets/images/photoimg/coffe.jpg')
     },
     {
-      email: 'miyagi@email.com',
+      email: Faker::Internet.email,
       name: '東国原',
       partner_name: 'わたる',
       couple_name: 'tonkatu',
@@ -500,10 +500,10 @@ User.create!(
       password: 'miyagi01',
       password_confirmation: 'miyagi01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/photoimg/beer.jpg')
+      profile_image: File.open('./app/assets/images/photoimg/beer.jpg')
     },
     {
-      email: 'kagoshima@email.com',
+      email: Faker::Internet.email,
       name: 'yu',
       partner_name: 'saki',
       couple_name: 'hoshi79',
@@ -511,10 +511,10 @@ User.create!(
       password: 'kagoshima01',
       password_confirmation: 'kagoshima01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user32.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user32.JPG')
     },
     {
-      email: 'okinawa@email.com',
+      email: Faker::Internet.email,
       name: 'ナヨン',
       partner_name: 'ジス',
       couple_name: 'nankuru713',
@@ -522,10 +522,10 @@ User.create!(
       password: 'okinawa01',
       password_confirmation: 'okinawa01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user31.JPG')
+      profile_image: File.open('./app/assets/images/userimg/user31.JPG')
     },
     {
-      email: 'nihon@email.com',
+      email: Faker::Internet.email,
       name: '太郎',
       partner_name: '花子',
       couple_name: 'japan1',
@@ -533,7 +533,7 @@ User.create!(
       password: 'nihon01',
       password_confirmation: 'nihon01',
       is_deleted: false,
-      prfile_image: File.open('./app/assets/images/userimg/user30.jpg')
+      profile_image: File.open('./app/assets/images/userimg/user30.jpg')
     }
   ]
 )
@@ -651,7 +651,7 @@ User.all.each do |user|
         name: user.name,
         place: 'cafe the c',
         body: '目の前に海が広がるカフェ！海鮮プレート美味！！',
-        image: File.open('./app/assets/images/photoimg/user10.JPG')
+        image: File.open('./app/assets/images/userimg/user10.JPG')
       },
       {
         title: 'いつもありがとう',
