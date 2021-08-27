@@ -698,3 +698,5 @@ User.all.each do |user|
     ]
   )
 end
+
+#anniversaryの設定が多分変　

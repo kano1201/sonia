@@ -1,5 +1,5 @@
 class Photo < ApplicationRecord
-  belongs_to :user
+  belongs_to :user, class_name: 'User'
   attachment :image
   has_many :likes, dependent: :destroy
   has_many :comments, dependent: :destroy
