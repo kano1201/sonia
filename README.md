@@ -10,6 +10,8 @@ OpenWeatherMap
 - デプロイ
 AWS(EC2),Github
 
+![search](https://user-images.githubusercontent.com/84449468/131206582-f7a7f9cc-6c03-471c-8e58-de5e711c3b44.gif)
+
 ## サイト概要
 カップルで一つのアカウントを作成、管理し情報を共有するSNSです。<br>
 愛するパートナーとの思い出の場所や時間、宝物を記録、発信することができます。<br>
