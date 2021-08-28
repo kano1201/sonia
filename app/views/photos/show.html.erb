@@ -36,9 +36,9 @@
         </div>
 
         <div class="row ml-3 mt-4 mb-5">
-          <div class="comments"><%= render 'comments/index', photo: @photo %></div>
-          <div id="comments_error"><%= render 'layouts/errors', obj: @comment %></div>
-          <div class="mt-3"><%= render 'comments/comment',photo: @photo, comment: @comment %></div>
+          <div class="comments" data-turbolinks='false'><%= render 'comments/index', photo: @photo %></div>
+          <div id="comments_error" data-turbolinks='false'><%= render 'layouts/errors', obj: @comment %></div>
+          <div class="mt-3" data-turbolinks='false'><%= render 'comments/comment',photo: @photo, comment: @comment %></div>
         </div>
       </div>
     </div>
