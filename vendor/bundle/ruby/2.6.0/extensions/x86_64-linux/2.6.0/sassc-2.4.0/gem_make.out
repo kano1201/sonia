@@ -1,11 +1,11 @@
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-/home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210815-6866-jdsyfi.rb extconf.rb
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+/home/ec2-user/.rbenv/versions/2.6.3/bin/ruby -I /home/ec2-user/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210826-18918-5y8y39.rb extconf.rb
 creating Makefile
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
 make "DESTDIR=" clean
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
 make "DESTDIR="
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
@@ -75,6 +75,6 @@ compiling ./libsass/src/util_string.cpp
 compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.so
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 libsass.so ./.gem.20210815-6866-pk3wln/sassc
+/usr/bin/install -c -m 0755 libsass.so ./.gem.20210826-18918-jaq6e6/sassc

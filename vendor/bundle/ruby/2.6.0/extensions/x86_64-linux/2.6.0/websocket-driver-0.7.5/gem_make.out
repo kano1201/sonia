@@ -1,15 +1,15 @@
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-/home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210815-6866-2th4ik.rb extconf.rb
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/home/ec2-user/.rbenv/versions/2.6.3/bin/ruby -I /home/ec2-user/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210826-18918-19nz2pw.rb extconf.rb
 creating Makefile
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
 make "DESTDIR=" clean
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
 make "DESTDIR="
 compiling websocket_mask.c
 linking shared-object websocket_mask.so
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20210815-6866-88rx3f
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20210826-18918-1crwaju

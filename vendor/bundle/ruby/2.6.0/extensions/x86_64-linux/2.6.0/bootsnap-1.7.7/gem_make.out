@@ -1,11 +1,11 @@
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
-/home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210815-6866-ulzxhi.rb extconf.rb
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
+/home/ec2-user/.rbenv/versions/2.6.3/bin/ruby -I /home/ec2-user/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210826-18918-1icpzuv.rb extconf.rb
 creating Makefile
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
 make "DESTDIR=" clean
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
 make "DESTDIR="
 compiling bootsnap.c
 bootsnap.c: In function ‘bs_rb_fetch’:
@@ -30,6 +30,6 @@ cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand�
 cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’
 linking shared-object bootsnap/bootsnap.so
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20210815-6866-qjhuiq/bootsnap
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20210826-18918-4lc9ku/bootsnap

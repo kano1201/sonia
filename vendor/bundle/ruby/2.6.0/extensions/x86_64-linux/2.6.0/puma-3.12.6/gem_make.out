@@ -1,14 +1,14 @@
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
-/home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210815-6866-48fyl8.rb extconf.rb
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
+/home/ec2-user/.rbenv/versions/2.6.3/bin/ruby -I /home/ec2-user/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210826-18918-c6orcv.rb extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
 creating Makefile
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
 make "DESTDIR=" clean
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
 make "DESTDIR="
 compiling http11_parser.c
 compiling io_buffer.c
@@ -38,6 +38,6 @@ cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’
 compiling puma_http11.c
 linking shared-object puma/puma_http11.so
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/ext/puma_http11
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20210815-6866-h0mj67/puma
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20210826-18918-1m4ikrc/puma

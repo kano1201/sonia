@@ -1,5 +1,5 @@
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.3/ext/ffi_c
-/home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210815-6866-1x4gm1p.rb extconf.rb
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.3/ext/ffi_c
+/home/ec2-user/.rbenv/versions/2.6.3/bin/ruby -I /home/ec2-user/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210826-18918-1m1fofj.rb extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... yes
 checking for ffi_prep_cif_var()... yes
 checking for ffi_raw_call()... yes
@@ -8,10 +8,10 @@ checking for whether -pthread is accepted as LDFLAGS... yes
 creating extconf.h
 creating Makefile
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.3/ext/ffi_c
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.3/ext/ffi_c
 make "DESTDIR=" clean
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.3/ext/ffi_c
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.3/ext/ffi_c
 make "DESTDIR="
 compiling AbstractMemory.c
 compiling ArrayType.c
@@ -38,6 +38,6 @@ compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.so
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.3/ext/ffi_c
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/ffi-1.15.3/ext/ffi_c
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20210815-6866-4gprsi
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20210826-18918-tcrs4x
