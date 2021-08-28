@@ -2,6 +2,14 @@
 us「私たち」、earth「地球」、あす「明日」<br>
 ３文字（奇数）・・・割り切れない数、陽の数字（中国の陰陽思想に基づく）
 
+## 使用した技術
+- Gem
+devise,refile,refile-s3,refile-mini_magick,bootstrap,jquery-rails,pry-byebug,dotenv-rails,pry-rails,rspec-rails,factory_bot_rails,faker,kaminari,rails-i18n
+- API
+OpenWeatherMap
+- デプロイ
+AWS(EC2),Github
+
 ## サイト概要
 カップルで一つのアカウントを作成、管理し情報を共有するSNSです。<br>
 愛するパートナーとの思い出の場所や時間、宝物を記録、発信することができます。<br>
@@ -29,7 +37,7 @@ SNSに馴染みのある年齢層
 - 二人の記念日を登録し、日々カウントすることができます。
 - 二人の日常やパートナーへの想いを記録し、文章で伝えることができます。
 - デートプランや、記念日などの過ごし方、サプライズやプレゼント選びの際の情報収集ができます。
-- 他ユーザーの投稿をいいね♡し、覚えておきたい情報やお気に入りの投稿を保存することができます。
+- 他ユーザーの投稿をいいね、覚えておきたい情報やお気に入りの投稿を保存することができます。
 
 ## 設計書
 - 画面設計書:https://drive.google.com/file/d/1E2zxNbkLugAZCcB4M0Jov-1t1aCReg8b/view?usp=sharing
@@ -47,7 +55,3 @@ https://docs.google.com/spreadsheets/d/1fqJI0TjNRaTpuZG-7H6M0-RtpzfGXnq853BA96f2
 - フレームワーク：Ruby on Rails
 - JSライブラリ：jQuery
 - IDE：Cloud9
-
-## 使用素材
-- 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
-- 使用しない場合は、使用素材の項目をREADMEから削除してください。

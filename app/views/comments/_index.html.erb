@@ -1,4 +1,4 @@
-<div class="comment">
+<div class="comment" data-turbolinks='false'>
   <% photo.comments.each do |comment| %>
     <p>
       <%= link_to user_path(comment.user),class: "user_#{comment.user.id}" do %>

@@ -1,7 +1,7 @@
-<div class="new-comment">
+<div class="new-comment" data-turbolinks='false'>
   <%= form_with model:[photo,comment], remote: true do |f| %>
     <%= f.text_area :comment, size:"90x5", placeholder: "Please enter your comments",class:"comment-form" %>
-    <div class="form_btn offset-11">
+    <div class="form_btn offset-11" data-turbolinks='false'>
     <%= f.submit "Post",class:"btn btn-border" %>
     </div>
   <% end %>
