@@ -3,9 +3,9 @@
     <% photos.each do |photo| %>
       <% unless photo.user.is_deleted == true %>
         <div class="card mr-2 mt-2" style="width: 12rem;">
-          <div class="p-1 flex-fill bd-highlight">
-            <%= link_to photo_path(photo.id) do %>
-              <%= attachment_image_tag photo, :image,:fill,170,140, class: "card-img-top rounded" %>
+          <div class="p-1 flex-fill bd-highlight" >
+            <%= link_to photo_path(photo.id) do%>
+              <%= attachment_image_tag photo, :image,:fill,170,140, class: "card-img-top rounded", 'data-turbolinks': false  %>
             <% end %>
           </div>
           <div class="card-body">
