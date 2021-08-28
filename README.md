@@ -10,7 +10,9 @@ OpenWeatherMap
 - デプロイ
 AWS(EC2),Github
 
-![search](https://user-images.githubusercontent.com/84449468/131206582-f7a7f9cc-6c03-471c-8e58-de5e711c3b44.gif)
+https://user-images.githubusercontent.com/84449468/131219222-adea63c0-83af-43dc-952c-e384a85c0e49.mov
+https://user-images.githubusercontent.com/84449468/131219255-65a5d779-3046-41b9-8198-2e49ea1782d3.mov
+https://user-images.githubusercontent.com/84449468/131219272-c30dca5f-5d9d-41e8-a6a6-0801f9b9840e.mov
 
 ## サイト概要
 カップルで一つのアカウントを作成、管理し情報を共有するSNSです。<br>
