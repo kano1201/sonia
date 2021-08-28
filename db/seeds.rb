@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#user
 User.create!(
   [
     {
@@ -538,6 +540,7 @@ User.create!(
   ]
 )
 
+#photo
 User.all.each do |user|
   user.photos.create!(
     [
@@ -697,4 +700,5 @@ User.all.each do |user|
       }
     ]
   )
+
 end

@@ -6,9 +6,9 @@ class SearchController < ApplicationController
     @content = params[:content]
     @method = params[:method]
     if @model == 'user'
-      @records = User.search_for(@content, @method)
+      @records = User.search_for(@content, @method).page(params[:page]).reverse_order
     else
-      @records = Photo.search_for(@content, @method)
+      @records = Photo.search_for(@content, @method).page(params[:page]).reverse_order
     end
   end
   
