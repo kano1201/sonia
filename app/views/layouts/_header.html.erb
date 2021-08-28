@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
        </button>
       <% if user_signed_in? %>
-        <a class="navbar-brand" href="/"><%= image_tag "logo.png", size:"150" %></a>
+        <a class="navbar-brand" href="/top"><%= image_tag "logo.png", size:"150" %></a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto d-flex align-items-start">
             <li class="nav-item">
@@ -33,7 +33,7 @@
           </ul>
         </div>
       <% else %>
-        <div data-turbolinks='false'><a class="navbar-brand" href="/about"><%= image_tag "logo.png", size:"150" %></a></div>
+        <div data-turbolinks='false'><a class="navbar-brand" href="/"><%= image_tag "logo.png", size:"150" %></a></div>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto d-flex align-items-start">
             <li class="nav-item">

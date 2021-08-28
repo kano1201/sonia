@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   get 'search/search'
   devise_for :users
-  root 'homes#top'
-  get 'about' => 'homes#about'
+  root 'homes#about'
+  get 'top' => 'homes#top'
   get 'user/unsubscribe' => 'users#unsubscribe', as: 'confirm_unsubscribe'
   patch 'user/withdraw' => 'users#withdraw', as: 'withdraw_user'
   put 'user/withdraw' => 'users#withdraw'
