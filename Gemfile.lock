@@ -326,10 +326,8 @@ DEPENDENCIES
   rails (~> 5.2.5)
   refile!
   refile-mini_magick
-<<<<<<< Updated upstream
   rspec-rails
-=======
->>>>>>> Stashed changes
+
   sassc-rails (~> 2.1.2)
   selenium-webdriver
   spring
