@@ -28,7 +28,7 @@ class UsersController < ApplicationController
     @user = User.find(current_user.id)
     @user.update(is_deleted: true)
     reset_session
-    redirect_to about_path
+    redirect_to root_path
   end
 
   def index
