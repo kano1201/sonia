@@ -1,15 +1,15 @@
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
-/home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210815-6866-12l3spp.rb extconf.rb
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+/home/ec2-user/.rbenv/versions/2.6.3/bin/ruby -I /home/ec2-user/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210826-18918-aey0cd.rb extconf.rb
 creating Makefile
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR=" clean
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR="
 compiling bcrypt_ext.c
 compiling crypt_blowfish.c
-gcc  -D__SKIP_GNU     -c -o x86.o x86.S
+gcc  -D__SKIP_GNU -I/home/ec2-user/.rbenv/versions/2.6.3/include     -c -o x86.o x86.S
 compiling crypt_gensalt.c
 compiling wrapper.c
 wrapper.c:182:60: warning: ‘struct crypt_data’ declared inside parameter list will not be visible outside of this definition or declaration
@@ -21,6 +21,6 @@ cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand�
 cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’
 linking shared-object bcrypt_ext.so
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20210815-6866-lp64g9
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20210826-18918-3ec0gv

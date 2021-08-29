@@ -1,11 +1,11 @@
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
-/home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210815-6866-absh5j.rb extconf.rb
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
+/home/ec2-user/.rbenv/versions/2.6.3/bin/ruby -I /home/ec2-user/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210826-18918-3uzqbm.rb extconf.rb
 creating Makefile
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
 make "DESTDIR=" clean
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
 make "DESTDIR="
 compiling breakpoint.c
 compiling byebug.c
@@ -14,6 +14,6 @@ compiling locker.c
 compiling threads.c
 linking shared-object byebug/byebug.so
 
-current directory: /home/ec2-user/environment/asu/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
+current directory: /home/ec2-user/asu/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 byebug.so ./.gem.20210815-6866-co99w3/byebug
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20210826-18918-xqvmji/byebug
