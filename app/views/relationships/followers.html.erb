@@ -7,7 +7,7 @@
           <% if @users.exists? %>
             <% @users.each do |user| %>
               <tr>
-                <td><%= attachment_image_tag(user, :profile_image, :fill, 100, 100, fallback: "no_image.jpg") %></td>
+                <td><%= attachment_image_tag(user, :profile_image, :fill, 100, 100, fallback: "no_image.jpg", size: '100x100') %></td>
                 <td><%= user.couple_name %></td>
                 <td>follow: <%= user.followings.count %></td>
                 <td>follower: <%= user.followers.count %></td>
