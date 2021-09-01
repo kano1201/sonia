@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+<<<<<<< HEAD
 
 #user
 User.create!(
@@ -702,3 +703,5 @@ User.all.each do |user|
   )
 
 end
+=======
+>>>>>>> origin/main

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # asu
 us「私たち」、earth「地球」、あす「明日」<br>
 ３文字（奇数）・・・割り切れない数、陽の数字（中国の陰陽思想に基づく）
@@ -59,3 +60,29 @@ https://docs.google.com/spreadsheets/d/1fqJI0TjNRaTpuZG-7H6M0-RtpzfGXnq853BA96f2
 - フレームワーク：Ruby on Rails
 - JSライブラリ：jQuery
 - IDE：Cloud9
+=======
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+>>>>>>> origin/main

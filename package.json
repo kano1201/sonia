@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "asu",
+=======
+  "name": "sonia",
+>>>>>>> origin/main
   "private": true,
   "dependencies": {}
 }

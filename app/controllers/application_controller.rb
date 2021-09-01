@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+<<<<<<< HEAD
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   protected
@@ -19,4 +20,6 @@ class ApplicationController < ActionController::Base
     def after_sign_in_path_for(resource)
       top_path
     end
+=======
+>>>>>>> origin/main
 end
